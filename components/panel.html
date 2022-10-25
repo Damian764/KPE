@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator fotowoltaiczny | Krajowy Projekt Energetyczny</title>
+    <link rel="shortcut icon" href="../assets/icon/icon kpe.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/main.css?ver=251022">
+    <link rel="stylesheet" href="../css/panel.css?ver=251022">
+    <!-- Hotjar Tracking Code for https://krajowyprojekt.pl/kalkulatorkpenew/components/panel.html -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 2703134,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVEDQJ91D4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PVEDQJ91D4');
+    </script>
+</head>
+
+<body class="active">
+    <div id="container">
+        <div id="user-panel" class="">
+            <div id="collapse-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                    <path d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"></path>
+                </svg>
+            </div>
+            <div class="logo"><img src="../img/logo kpe.png" alt="Krajowy Projekt Energetyczny"></div>
+            <div id="calculator-button" class="panel-item active" title="Kalkulator">
+                <span>Kalkulator</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M6 22h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2zm3-3H7v-2h2v2zm0-4H7v-2h2v2zm0-4H7V9h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm4 8h-2v-6h2v6zm0-8h-2V9h2v2zM6 4h12v3H6V4z">
+                    </path>
+                </svg>
+            </div>
+            <div id="offer-button" class="panel-item" title="Oferta">
+                <span>Oferta</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="m20.749 12 1.104-1.908a1 1 0 0 0-.365-1.366l-1.91-1.104v-2.2a1 1 0 0 0-1-1h-2.199l-1.103-1.909a1.008 1.008 0 0 0-.607-.466.993.993 0 0 0-.759.1L12 3.251l-1.91-1.105a1 1 0 0 0-1.366.366L7.62 4.422H5.421a1 1 0 0 0-1 1v2.199l-1.91 1.104a.998.998 0 0 0-.365 1.367L3.25 12l-1.104 1.908a1.004 1.004 0 0 0 .364 1.367l1.91 1.104v2.199a1 1 0 0 0 1 1h2.2l1.104 1.91a1.01 1.01 0 0 0 .866.5c.174 0 .347-.046.501-.135l1.908-1.104 1.91 1.104a1.001 1.001 0 0 0 1.366-.365l1.103-1.91h2.199a1 1 0 0 0 1-1v-2.199l1.91-1.104a1 1 0 0 0 .365-1.367L20.749 12zM9.499 6.99a1.5 1.5 0 1 1-.001 3.001 1.5 1.5 0 0 1 .001-3.001zm.3 9.6-1.6-1.199 6-8 1.6 1.199-6 8zm4.7.4a1.5 1.5 0 1 1 .001-3.001 1.5 1.5 0 0 1-.001 3.001z">
+                    </path>
+                </svg>
+            </div>
+            <div id="dofinansowanie-button" class="panel-item" title="Dofinansowania">
+                <span>Dofinansowania</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M6 21H3a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1zm7 0h-3a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v17a1 1 0 0 1-1 1zm7 0h-3a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1z">
+                    </path>
+                </svg>
+            </div>
+            <div id="credit-button" class="panel-item" title="Abonament">
+                <span>Abonament</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <circle cx="15.5" cy="13.5" r="2.5"></circle>
+                    <path
+                        d="M12 13.5c0-.815.396-1.532 1-1.988A2.47 2.47 0 0 0 11.5 11a2.5 2.5 0 1 0 0 5 2.47 2.47 0 0 0 1.5-.512 2.486 2.486 0 0 1-1-1.988z">
+                    </path>
+                    <path
+                        d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM4 18V6h16l.002 12H4z">
+                    </path>
+                </svg>
+            </div>
+            <button id="logout-button" class="panel-item" title="Wyloguj się!">
+                <span>Wyloguj</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M16 13v-2H7V8l-5 4 5 4v-3z"></path>
+                    <path
+                        d="M20 3h-9c-1.103 0-2 .897-2 2v4h2V5h9v14h-9v-4H9v4c0 1.103.897 2 2 2h9c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2z">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="content">
+            <div id="calculator-section" class="active">
+                <div class="calculator-grid">
+                    <div class="client-section-info">
+                        <div class="input-group blue">
+                            <div class="input-prefix">Klient</div>
+                            <input type="text" name="client-name" id="client-name" class="user-input" autofocus>
+                        </div>
+                        <div class="input-group green">
+                            <div class="input-prefix">Poziom biura</div>
+                            <select name="office_level" id="office_level" class="user-input"
+                                style=" border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+                                <option value="BR">Brązowy</option>
+                                <option value="SR">Srebrny</option>
+                                <option value="ZL">Złoty</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix">Numer umowy</div>
+                            <input type="text" name="generated_id" id="generated_id" class="user-input-no-update"
+                                disabled>
+                        </div>
+                        <div class="input-group green">
+                            <div class="input-prefix"><span>Prop. moc instalacji</span></div>
+                            <input type="number" min="2.2" step="0.1" value="3.45" id="proposed_power"
+                                class="user-input">
+                            <div class="input-suffix"><span>kWp</span></div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>Moc instalacji</span></div>
+                            <input type="number" min="3.3" step="0.1" value="0" id="calculated-power" class="user-input"
+                                disabled>
+                            <div class="input-suffix"><span>kWp</span></div>
+                        </div>
+                        <div class="input-group" id="have_pv_installation_container" style="display: none">
+                            <div class="input-prefix"><span>Klient posiada już instalację</span></div>
+                            <select id="have_pv_installation" class="user-input" disabled>
+                                <option value="Nie">Nie</option>
+                                <option value="Tak">Tak</option>
+                            </select>
+                        </div>
+                        <div class="multiple-group">
+                            <div class="input-group green">
+                                <div class="input-prefix"><span>Autokonsumpcja</span></div>
+                                <input type="number" min="0" max="100" step="5" value="20" id="autoconsumption"
+                                    class="user-input">
+                                <div class="input-suffix"><span>%</span></div>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-prefix"><span>Energia oddana do sieci</span></div>
+                                <input type="number" min="0" step="0.1" value="0" id="energy-given" class="user-input"
+                                    disabled>
+                                <div class="input-suffix"><span>kWh</span></div>
+                            </div>
+                            <div class="input-group green">
+                                <div class="input-prefix"><span>Zapotrzebowanie na energię</span></div>
+                                <input type="number" min="0" step="0.1" value="0" id="energy-need" class="user-input">
+                                <div class="input-suffix"><span>kWh</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-input-container">
+                        <div class="input-group green">
+                            <div class="input-prefix"><span>Moduł</span></div>
+                            <select id="panel_type" class="user-input">
+                                <!-- <option value="345" data-name="SunLink" selected>345Wp SunLink</option> -->
+                                <!--<option value="380" data-name="SunLink">380Wp SunLink</option>-->
+                                <!-- <option value="395" data-name="Trina Solar" id="trina-solar2">395Wp Trina Solar</option> -->
+                                <option value="420" data-name="Trina Solar" id="trina-solar">420Wp Trina Solar</option>
+                                <option value="410" data-name="SunLink" id="sun-link">410Wp SunLink</option>
+                                <option value="455" data-name="SunLink" id="trina-solar3" disabled>455Wp SunLink</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>Falownik</span></div>
+                            <select id="inverter_type" class="user-input">
+                                <option value="0">Hypontech</option>
+                                <option value="1500">Sofar solar</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>Ile faz</span></div>
+                            <select id="inverter_phase" class="user-input">
+                                <option value="1" id="faza-1">1 Faza</option>
+                                <option value="3" id="faza-3" selected>3 Fazy</option>
+                            </select>
+                        </div>
+                        <div class="input-group green">
+                            <div class="input-prefix"><span>Miejsce instalacji</span></div>
+                            <select id="place_of_installation" class="user-input">
+                                <option value="0" id="place_of_installation__pitched_roof" selected>Dach skośny</option>
+                                <option value="2000" id="place_of_installation__flat_roof">Dach płaski &#60;9&#176;
+                                </option>
+                                <option value="2000" id="place_of_installation__ground">Grunt</option>
+                            </select>
+                        </div>
+                        <div class="input-group green">
+                            <div class="input-prefix"><span>System montażowy</span></div>
+                            <select id="roofing" class="user-input">
+                                <option id="btb" value="0" selected>Blacha/trapez/blacho-dach</option>
+                                <option id="dachowka" value="1">Dachówka/Blacha narąbek</option>
+                                <option id="ekierka" value="2" style="display: none">Ekierka</option>
+                                <option id="balast" value="3" style="display: none">Balast</option>
+                                <option id="grunt" value="4" style="display: none">Grunt</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>Podnośnik</span></div>
+                            <select id="lift" class="user-input">
+                                <option value="0" selected>Nie</option>
+                                <option value="1000">Tak</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>Większy falownik</span></div>
+                            <select id="large_inverter" class="user-input">
+                                <option value="0" selected>Nie</option>
+                                <option value="1500">Tak</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>Ilość paneli</span></div>
+                            <input type="number" id="number_of_panels" class="user-input" disabled>
+                            <div class="input-suffix"><span>szt</span></div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>Dodatkowe koszty</span></div>
+                            <input type="number" id="additional_costs" class="user-input" min="0" value="0">
+                            <div class="input-suffix"><span>zł</span></div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>VAT</span></div>
+                            <select id="vat_value" class="user-input">
+                                <option value="0.08">8%</option>
+                                <option value="0.23">23%</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>Długość przewodu</span></div>
+                            <input type="number" placeholder="Wpisz ilość, aby zobaczyć sugerowaną cenę"
+                                id="cable_length" class="user-input" min="0">
+                            <div class="input-suffix"><span>m.</span></div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>Długość przekopu</span></div>
+                            <input type="number" placeholder="" id="trench_length" class="user-input" min="0" disabled>
+                            <div class="input-suffix"><span>m.</span></div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>Cena netto</span></div>
+                            <input type="number" id="suggest-price-netto" class="user-input-price">
+                            <div class="input-suffix"><span>zł</span></div>
+                        </div>
+                        <div class="input-group">
+                            <div class="input-prefix"><span>Cena brutto</span></div>
+                            <input type="number" id="suggest-price" class="user-input-price">
+                            <div class="input-suffix"><span>zł</span></div>
+                        </div>
+                        <div class="input-group" id="very-important-group">
+                            <button id="calculate_price" class="user-select">Wylicz cenę</button>
+                            <button id="generate_pdf" class="user-select red">Generuj PDF</button>
+                            <select id="discount" class="user-input dark-green">
+                                <option value="1.05" selected>&#10005;</option>
+                                <option value="1">&#10003;</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="dofinansowanie-section">
+                <div class="dofinansowanie-container">
+                    <div class="input-group" style="margin-top: 5px;">
+                        <div class="input-prefix"><span>Początkowo</span></div>
+                        <input type="text" id="dofinansowanie-start" class="user-input" disabled>
+                        <div class="input-suffix"><span>zł</span></div>
+                    </div>
+                    <div class="input-group" style="margin-top: 5px;">
+                        <div class="input-prefix"><span>Mój prąd</span></div>
+                        <input type="number" id="moj-prad" class="user-input" min="0" value="4000">
+                        <div class="input-suffix"><span>zł</span></div>
+                    </div>
+                    <div class="input-group odliczenie" style="margin-top: 5px;">
+                        <div class="input-prefix"><span>Odliczenie podatku</span></div>
+                        <select id="tax-select" class="user-input-no-update">
+                            <option value="0">0%</option>
+                            <option value="0.17" selected>17%</option>
+                            <option value="0.19">19%</option>
+                            <option value="0.25">25%</option>
+                            <option value="0.32">32%</option>
+                        </select>
+                        <input type="text" id="kwota-odliczenie" class="user-input" disabled>
+                        <div class="input-suffix"><span>zł</span></div>
+                    </div>
+                    <div class="input-group" style="margin-top: 5px;">
+                        <div class="input-prefix"><span>Finalna cena</span></div>
+                        <input type="text" id="finalna-dofinansowanie" class="user-input" disabled>
+                        <div class="input-suffix"><span>zł</span></div>
+                    </div>
+                    <h3 style="padding-top: 25px">Wizualizacja przewidywanej zwrotu inwestycji</h3>
+                    <div class="dofinansowanie-progress">
+                        <div class="progress-group">
+                            <div class="caption">Start</div><progress
+                                class="subsidy__progress_bar first-child"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 1</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 2</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 3</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 4</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 5</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 6</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 7</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 8</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 9</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 10</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 11</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 12</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 13</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 14</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 15</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 16</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 17</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 18</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 19</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                        <div class="progress-group">
+                            <div class="caption">Rok 20</div><progress class="subsidy__progress_bar"></progress>
+                            <div class="refund_amount"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-content-section width-50">
+                    <h2>Zwrot inwestycji</h2>
+                    <div class="input-group" style="display: none;">
+                        <span class="input-prefix">Spadek sprawności</span>
+                        <input type="number" id="decline_in_efficiency" class="user-input" value="0.5" step="0.01"
+                            min="0">
+                        <span class="input-suffix">%</span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-prefix">Cena energii</span>
+                        <input type="number" id="current-price" class="user-input" value="0.90" step="0.01" min="0">
+                        <span class="input-suffix">zł</span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-prefix">Cena energii sprzedawanej</span>
+                        <input type="number" id="sell-price" class="user-input" value="0.53" step="0.01" min="0">
+                        <span class="input-suffix">zł</span>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-prefix">Wzrost cen</span>
+                        <input type="number" id="wzrost-cen" class="user-input" value="5" step="0.01" min="0">
+                        <span class="input-suffix">%</span>
+                    </div>
+                    <div class="input-group" style="display: none;">
+                        <span class="input-prefix">Inflacja</span>
+                        <input type="number" id="price_inflation" class="user-input" value="3" step="0.01" min="0">
+                        <span class="input-suffix">%</span>
+                    </div>
+                </div>
+                <div class="offer-content-section years">
+                    <div class="save-container">
+                        <h3>Oszczędność po 20 latach</h3>
+                        <div id="saved-money">XX&nbsp;XXX,xx zł</div>
+                    </div>
+                    <div class="table">
+                        <div class="thead">
+                            <div class="tr">
+                                <div class="td">rok</div>
+                                <div class="td">Oszczędności w poszczególnych latach</div>
+                                <div class="td">Suma</div>
+                                <div class="td">Zwrot z inwestycji</div>
+                            </div>
+                        </div>
+                        <div class="tbody" id="wynik-inwestycji">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="offer-section">
+                <div class="offer-content-section client-section">
+                    <div class="about-offer">
+                        <div class="header">
+                            <h2>Przygotowana dla Państwa oferta obejmuje:</h2>
+                        </div>
+                        <div class="about-offer-content">
+                            <div class="about-offer-item">Finansowanie</div>
+                            <div class="about-offer-item">Dostawę kompletnej instalacji</div>
+                            <div class="about-offer-item">Montaż</div>
+                            <div class="about-offer-item">Uruchomienie</div>
+                            <div class="about-offer-item">Złożenie dokumentacji związanej z przyłaczeniem do sieci do
+                                OSD</div>
+                            <div class="about-offer-item">Wsparcie w wypełnieniu dokumentacji związanej z
+                                dofinansowaniem "Mój Prąd"</div>
+                            <div class="about-offer-item">Serwis</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-content-section">
+                    <h2>Szczegółowe zestawienie kosztów</h2>
+                    <div class="table">
+                        <div class="thead">
+                            <div class="tr one-child">
+                                <div class="th">Podstawowe dane o instalacji</div>
+                            </div>
+                        </div>
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">Moc instalacji</div>
+                                <div class="td" id="moc-instalacji"></div>
+                                <div class="td">kWp</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Średni uzysk</div>
+                                <div class="td" id="sredni-uzysk">1 000</div>
+                                <div class="td">kWh/kWp</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Prognozowana produkcja roczna</div>
+                                <div class="td" id="prognoza"></div>
+                                <div class="td">kWh</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="thead">
+                            <div class="tr one-child">
+                                <div class="th">Moduł</div>
+                            </div>
+                        </div>
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">Producent paneli</div>
+                                <div class="td" id="panel_manufacturer"></div>
+                                <div class="td" id="guarantee"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Technologia</div>
+                                <div class="td" id="panel_technology"></div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Moc pojedyńczego modułu</div>
+                                <div class="td" id="moc-modulu"></div>
+                                <div class="td">Wp.</div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Ilość modułów</div>
+                                <div class="td" id="ilosc-modolow"> </div>
+                                <div class="td">szt.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="thead">
+                            <div class="tr one-child">
+                                <div class="th">Falownik</div>
+                            </div>
+                        </div>
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">Producent falownika</div>
+                                <div class="td" id="inverter_manufacturer"></div>
+                                <div class="td" id="inventer_warranty"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Zabezpieczenia AC/DC</div>
+                                <div class="td">dostosowane do instalacji</div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Ilość faz</div>
+                                <div class="td" id="ilosc-faz"></div>
+                                <div class="td"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">Montaż</div>
+                                <div class="td">
+                                    <select class="user-input">
+                                        <option value="1">TAK</option>
+                                        <option value="0">NIE</option>
+                                    </select>
+                                </div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Oklablowanie strony DC</div>
+                                <div class="td">
+                                    <select class="user-input">
+                                        <option value="1">TAK</option>
+                                        <option value="0">NIE</option>
+                                    </select>
+                                </div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Okablowanie strony AC</div>
+                                <div class="td">
+                                    <select class="user-input">
+                                        <option value="1">TAK</option>
+                                        <option value="0">NIE</option>
+                                    </select>
+                                </div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Złącza MC4</div>
+                                <div class="td">
+                                    <select class="user-input">
+                                        <option value="1">TAK</option>
+                                        <option value="0">NIE</option>
+                                    </select>
+                                </div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Skrzynka przyłączeniowa</div>
+                                <div class="td">
+                                    <select class="user-input">
+                                        <option value="1">TAK</option>
+                                        <option value="0">NIE</option>
+                                    </select>
+                                </div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Ogranicznik przepięć</div>
+                                <div class="td">
+                                    <select class="user-input">
+                                        <option value="1">TAK</option>
+                                        <option value="0">NIE</option>
+                                    </select>
+                                </div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Konfiguracja inwertera</div>
+                                <div class="td">
+                                    <select class="user-input">
+                                        <option value="1">TAK</option>
+                                        <option value="0">NIE</option>
+                                    </select>
+                                </div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Dokumentacja techniczna</div>
+                                <div class="td">
+                                    <select class="user-input">
+                                        <option value="1">TAK</option>
+                                        <option value="0">NIE</option>
+                                    </select>
+                                </div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Dostawa urządzeń</div>
+                                <div class="td">
+                                    <select class="user-input">
+                                        <option value="1">TAK</option>
+                                        <option value="0">NIE</option>
+                                    </select>
+                                </div>
+                                <div class="td"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="tbody">
+                            <div class="tr">
+                                <div class="td">Suma kosztów netto</div>
+                                <div class="td" id="suma-netto">---</div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Podatek VAT</div>
+                                <div class="td" id="podatek-vat">8%</div>
+                                <div class="td"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Suma kosztów brutto</div>
+                                <div class="td" id="suma-brutto">---</div>
+                                <div class="td"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-content-section">
+                    <h2>Przybliżona prognoza produkcji</h2>
+                    <div class="table">
+                        <div class="thead">
+                            <div class="tr" style="font-size: 1.1em; font-weight: bold; border-bottom: 3px solid #333;">
+                                <div class="th">Miesiąc</div>
+                                <div class="th">Procent w roku</div>
+                                <div class="th">Wartość w kWh</div>
+                            </div>
+                        </div>
+                        <div class="tbody months">
+                            <div class="tr">
+                                <div class="td">Styczeń</div>
+                                <div class="td">3,05%</div>
+                                <progress value="3.05" max="20"></progress>
+                                <div class="td" id="styczen-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Luty</div>
+                                <div class="td">4,74%</div>
+                                <progress value="4.74" max="20"></progress>
+                                <div class="td" id="luty-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Marzec</div>
+                                <div class="td">8,10%</div>
+                                <progress value="8.1" max="20"></progress>
+                                <div class="td" id="marzec-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Kwiecień</div>
+                                <div class="td">10,57%</div>
+                                <progress value="10.57" max="20"></progress>
+                                <div class="td" id="kwiecien-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Maj</div>
+                                <div class="td">14,26%</div>
+                                <progress value="14.26" max="20"></progress>
+                                <div class="td" id="maj-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Czerwiec</div>
+                                <div class="td">13,49%</div>
+                                <progress value="13.49" max="20"></progress>
+                                <div class="td" id="czerwiec-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Lipiec</div>
+                                <div class="td">14,14%</div>
+                                <progress value="14.14" max="20"></progress>
+                                <div class="td" id="lipiec-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Sierpień</div>
+                                <div class="td">12,69%</div>
+                                <progress value="12.69" max="20"></progress>
+                                <div class="td" id="sierpien-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Wrzesień</div>
+                                <div class="td">8,43%</div>
+                                <progress value="8.43" max="20"></progress>
+                                <div class="td" id="wrzesien-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Październik</div>
+                                <div class="td">5,26%</div>
+                                <progress value="5.26" max="20"></progress>
+                                <div class="td" id="pazdziernik-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Listopad</div>
+                                <div class="td">2,90%</div>
+                                <progress value="2.9" max="20"></progress>
+                                <div class="td" id="listopad-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Grudzień</div>
+                                <div class="td">2,37%</div>
+                                <progress value="2.37" max="20"></progress>
+                                <div class="td" id="grudzien-wartosc"></div>
+                            </div>
+                            <div class="tr">
+                                <div class="td">Rocznie</div>
+                                <div class="td">100%</div>
+                                <div class="td" id="rocznie-wartosc"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="credit-section">
+                <div class="credit-specs">
+                    <div class="bank-logo"><img id="logo-bank" src="../img/in-bank-logo.png"></div>
+                    <div class="input-group">
+                        <div class="input-prefix">Okres spłaty abonamentu</div>
+                        <input type="number" name="repayment_period" id="repayment_period" class="user-input-credit"
+                            min="0" max="150" value="150">
+                        <div class="input-suffix">msc</div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-prefix">Oprocentowanie</div>
+                        <select name="interest" id="interest" class="user-input-credit">
+                            <option value="0.6520" id="in-bank" selected>0.652 (max 150 msc)</option>
+                            <option value="0.675" id='bnp-paribas'>0.675 (max 120 msc)</option>
+                            <option value="0.82" id="tf-bank">0.82 (max 96 msc)</option>
+                        </select>
+                        <div class="input-suffix">%</div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-prefix">Kwota abonamentu</div>
+                        <input type="text" name="kwota-kredytu" id="kwota-kredytu" class="user-input" disabled>
+                        <div class="input-suffix">zł</div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-prefix">Wpłata własna</div>
+                        <input type="number" name="self_deposit" id="self_deposit" class="user-input-credit" min="0">
+                        <div class="input-suffix">zł</div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-prefix">Odroczenie raty 2msc.</div>
+                        <select name="deferment" id="deferment" class="user-input-credit">
+                            <option value="Nie">Nie</option>
+                            <option value="Tak">Tak</option>
+                        </select>
+                        <div class="input-suffix">%</div>
+                    </div>
+                    <div class="input-group one-item red">
+                        <button id="advance" class="user-input-credit">Wpłata mój prąd i zwrot podatku</button>
+                    </div>
+                </div>
+                <div class="credit-table">
+                    <div class="table">
+                        <div class="thead">
+                            <div class="tr">
+                                <div class="td">Numer raty</div>
+                                <div class="td">Kwota raty</div>
+                            </div>
+                        </div>
+                        <div class="tbody" id="wynik-kredyt">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="../js/cookies.js?ver=251022"></script>
+    <script src="../js/logout.js?ver=251022"></script>
+    <script src="../js/menu.js?ver=251022"></script>
+    <script src="../js/variables.js?ver=251022"></script>
+    <script src="../js/prices.js?ver=251022"></script>
+    <script src="../js/calculator.js?ver=251022"></script>
+    <script src="../js/pdf_generator.js?ver=251022"></script>
+</body>
+
+</html>
