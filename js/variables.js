@@ -33,3 +33,4 @@ const inventer_warranty = document.getElementById('inventer_warranty');
 const advance = document.getElementById('advance');
 const user_inputs = document.querySelectorAll('.user-input');
 const calculate_credit = document.querySelectorAll('.user-input-credit');
+const horizontal_panels = document.querySelector('#number_of_panels_horizontally');
