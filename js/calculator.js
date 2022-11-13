@@ -125,14 +125,14 @@ place_of_installation.addEventListener('change', () => {
 		document.getElementById('balast').style.display = 'none';
 		document.getElementById('grunt').style.display = 'block';
 		document.getElementById('trina-solar').disabled = true;
-		document.getElementById('trina-solar2').disabled = true;
-		// document.getElementById('sun-link').disabled = true;
+// 		document.getElementById('trina-solar2').disabled = true;
+		document.getElementById('sun-link').disabled = true;
 		document.getElementById('trina-solar3').disabled = false;
 		document.getElementById('trina-solar3').selected = true;
 	} else {
 		document.getElementById('trina-solar').disabled = false;
-		document.getElementById('trina-solar2').disabled = false;
-		// document.getElementById('sun-link').disabled = false;
+// 		document.getElementById('trina-solar2').disabled = false;
+		document.getElementById('sun-link').disabled = false;
 		document.getElementById('trina-solar3').disabled = true;
 	}
 });
