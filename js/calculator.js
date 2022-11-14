@@ -175,16 +175,14 @@ const calculatePrice = (el) => {
 		add_cost += 1500;
 	}
 	horizontal_panels.max = document.getElementById('ilosc-modolow').innerText;
-	if (place_of_installation__flat_roof.selected == false || roofing.value != 2) {
-		document.querySelector('#horizontal-panels-container').style.display = 'none';
-		horizontal_panels.disabled = true;
-	}
-	if (place_of_installation__flat_roof.selected == true && roofing.value == 2) {
+	document.querySelector('#horizontal-panels-container').style.display = 'none';
+	horizontal_panels.disabled = true;
+	if ((place_of_installation__flat_roof.selected == true && roofing.value == 2) || place_of_installation__pitched_roof.selected == true) {
 		document.querySelector('#horizontal-panels-container').style.display = 'grid';
 		horizontal_panels.disabled = false;
 	}
-	if (place_of_installation__flat_roof.selected && roofing.value == 2 && horizontal_panels.disabled == false) {
-		add_cost += horizontal_panels.value * 250; // 250 is the price of single panel
+	if ((place_of_installation__flat_roof.selected && roofing.value == 2) || (place_of_installation__pitched_roof.selected == true && horizontal_panels.disabled == false)) {
+		add_cost += horizontal_panels.value * (place_of_installation__flat_roof.selected == true ? 250 : 150); // 250 is the price of single panel
 	}
 	newPriceIncrease = 1400;
 	cable_price = getCableCost();
