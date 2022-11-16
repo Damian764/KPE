@@ -83,6 +83,11 @@ generate_pdf.addEventListener('click', (e) => {
 	y2 += y2_diff;
 	y3 += y3_diff;
 	doc.line(x1, y1, x2, y2);
+	doc.text(`Ilość paneli w poziomie: ${horizontal_panels.value} szt.`, x3, y3);
+	y1 += y1_diff;
+	y2 += y2_diff;
+	y3 += y3_diff;
+	doc.line(x1, y1, x2, y2);
 	doc.text(`Dodatkowe koszty: ${document.getElementById('additional_costs').value} zł`, x3, y3);
 	y1 += y1_diff;
 	y2 += y2_diff;

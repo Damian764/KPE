@@ -349,11 +349,11 @@ const getCableCost = () => {
 	if (!isNaN(parseFloat(cable_length.value))) {
 		if (calculated_power.value <= 10) {
 			return cable_length.value > 0 ? Math.floor(parseFloat(cable_length.value) * 20) : 0;
-		} else if (calculated_power.value > 10 && calculated_powet <= 25) {
+		} else if (calculated_power.value > 10 && calculated_power.value <= 25) {
 			return cable_length.value > 0 ? Math.floor(parseFloat(cable_length.value) * 30) : 0;
-		} else if (calculated_power.value > 25 && calculated_powet <= 40) {
+		} else if (calculated_power.value > 25 && calculated_power.value <= 40) {
 			return cable_length.value > 0 ? Math.floor(parseFloat(cable_length.value) * 35) : 0;
-		} else if (calculated_power.value > 40 && calculated_powet <= 50) {
+		} else if (calculated_power.value > 40 && calculated_power.value <= 50) {
 			return cable_length.value > 0 ? Math.floor(parseFloat(cable_length.value) * 40) : 0;
 		}
 		return cable_length.value > 0 ? Math.floor(parseFloat(cable_length.value) * 45) : 0;
