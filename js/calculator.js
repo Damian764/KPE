@@ -150,7 +150,6 @@ const updatePower = () => {
 			trinaSolar455W.style.display = 'block';
 			trinaSolar460W.disabled = false;
 			trinaSolar460W.style.display = 'block';
-			sunLink410W.selected = true;
 			sunLink410W.style.display = 'none';
 			if (sunLink410W.selected == true) {
 				sunLink410W.selected = false;
@@ -253,9 +252,6 @@ const calculatePrice = (el) => {
 	} else {
 		add_cost = parseFloat(additional_costs.value);
 	}
-	if (inverter_phase.value == 3) {
-		add_cost += 1500;
-	}
 	horizontal_panels.max = document.getElementById('ilosc-modolow').innerText;
 	document.querySelector('#horizontal-panels-container').style.display = 'none';
 	horizontal_panels.disabled = true;
@@ -266,7 +262,7 @@ const calculatePrice = (el) => {
 	if ((place_of_installation__flat_roof.selected && roofing.value == 2) || (place_of_installation__pitched_roof.selected == true && horizontal_panels.disabled == false)) {
 		add_cost += horizontal_panels.value * (place_of_installation__flat_roof.selected == true ? 250 : 150); // 250 is the price of single panel
 	}
-	newPriceIncrease = 1400;
+	newPriceIncrease = document.getElementById('hoymiles-inwerter').selected == false ? 1400 : 0;
 	cable_price = getCableCost();
 	trench_price = getTrenchCost();
 	lift_price = getLiftCost();
