@@ -230,6 +230,12 @@ const updatePower = () => {
 	document.getElementById('grudzien-wartosc').innerText = parseFloat(srednia_produkcja * 0.0237).toFixed(2) + ' kWh';
 };
 const calculatePrice = (el) => {
+	if (calculated_power.value > 3.69) {
+		document.getElementById('faza-1').style.display = 'none';
+		inverter_phase.value = 3;
+	} else {
+		document.getElementById('faza-1').style.display = 'block';
+	}
 	if (number_of_panels.value < 6 && document.getElementById('have_pv_installation').value === 'Nie' && document.getElementById('hoymiles-inwerter').selected == false) {
 		document.getElementById('faza-3').style.display = 'none';
 		inverter_phase.value = 1;
