@@ -14,7 +14,6 @@ generate_pdf.addEventListener('click', (e) => {
 	let y3 = 10;
 	let y3_diff = 10;
 	const doc = new jsPDF();
-	console.log(doc);
 	doc.addFont('RobotoMono-Regular.ttf', 'RobotoMono', 'normal');
 	doc.setFont('RobotoMono', 'normal');
 	doc.line(x1, y1, x2, y2);

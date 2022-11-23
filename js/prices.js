@@ -1346,1405 +1346,1405 @@ const nettoCalculation = () => {
 
 		if (roofing.value == 1) {
 			if (calculated_power.value >= 2.05) {
-				priceNetto = 13358.22;
+				priceNetto = 13686.34;
 			}
 			if (calculated_power.value >= 2.46) {
-				priceNetto = 15149.28;
+				priceNetto = 15543.03;
 			}
 			if (calculated_power.value >= 2.87) {
-				priceNetto = 16920.25;
+				priceNetto = 17379.62;
 			}
 			if (calculated_power.value >= 3.28) {
-				priceNetto = 17995.05;
+				priceNetto = 18520.05;
 			}
 			if (calculated_power.value >= 3.69) {
-				priceNetto = 19576.05;
+				priceNetto = 20166.67;
 			}
 			if (calculated_power.value >= 4.1) {
-				priceNetto = 21149.04;
+				priceNetto = 21805.29;
 			}
 			if (calculated_power.value >= 4.51) {
-				priceNetto = 22467.51;
+				priceNetto = 23189.38;
 			}
 			if (calculated_power.value >= 4.92) {
-				priceNetto = 23998.43;
+				priceNetto = 24785.93;
 			}
 			if (calculated_power.value >= 5.33) {
-				priceNetto = 26293.79;
+				priceNetto = 27146.91;
 			}
 			if (calculated_power.value >= 5.74) {
-				priceNetto = 27504.46;
+				priceNetto = 28423.21;
 			}
 			if (calculated_power.value >= 6.15) {
-				priceNetto = 29042.17;
+				priceNetto = 30026.54;
 			}
 			if (calculated_power.value >= 6.56) {
-				priceNetto = 30580.38;
+				priceNetto = 31630.37;
 			}
 			if (calculated_power.value >= 6.97) {
-				priceNetto = 33423.61;
+				priceNetto = 34539.23;
 			}
 			if (calculated_power.value >= 7.38) {
-				priceNetto = 34723.74;
+				priceNetto = 35904.98;
 			}
 			if (calculated_power.value >= 7.79) {
-				priceNetto = 36088.79;
+				priceNetto = 37335.66;
 			}
 			if (calculated_power.value >= 8.2) {
-				priceNetto = 37184.51;
+				priceNetto = 38497.0;
 			}
 			if (calculated_power.value >= 8.61) {
-				priceNetto = 38268.71;
+				priceNetto = 39646.83;
 			}
 			if (calculated_power.value >= 9.02) {
-				priceNetto = 39242.67;
+				priceNetto = 40686.41;
 			}
 			if (calculated_power.value >= 9.43) {
-				priceNetto = 40874.33;
+				priceNetto = 42383.7;
 			}
 			if (calculated_power.value >= 9.84) {
-				priceNetto = 41786.96;
+				priceNetto = 43361.95;
 			}
 			if (calculated_power.value >= 10.25) {
-				priceNetto = 44919.06;
+				priceNetto = 46600.69;
 			}
 			if (calculated_power.value >= 10.66) {
-				priceNetto = 47746.33;
+				priceNetto = 49495.23;
 			}
 			if (calculated_power.value >= 11.07) {
-				priceNetto = 49462.74;
+				priceNetto = 51278.9;
 			}
 			if (calculated_power.value >= 11.48) {
-				priceNetto = 50934.32;
+				priceNetto = 52817.75;
 			}
 			if (calculated_power.value >= 11.89) {
-				priceNetto = 53075.97;
+				priceNetto = 55026.66;
 			}
 			if (calculated_power.value >= 12.3) {
-				priceNetto = 54170.4;
+				priceNetto = 56188.36;
 			}
 			if (calculated_power.value >= 12.71) {
-				priceNetto = 54588.58;
+				priceNetto = 56673.8;
 			}
 			if (calculated_power.value >= 13.12) {
-				priceNetto = 56002.39;
+				priceNetto = 58154.88;
 			}
 			if (calculated_power.value >= 13.53) {
-				priceNetto = 59774.74;
+				priceNetto = 61994.49;
 			}
 			if (calculated_power.value >= 14.28) {
-				priceNetto = 60952.91;
+				priceNetto = 63239.93;
 			}
 			if (calculated_power.value >= 14.35) {
-				priceNetto = 62495.12;
+				priceNetto = 64849.41;
 			}
 			if (calculated_power.value >= 14.76) {
-				priceNetto = 63945.67;
+				priceNetto = 66367.22;
 			}
 			if (calculated_power.value >= 15.17) {
-				priceNetto = 65911.23;
+				priceNetto = 68400.05;
 			}
 			if (calculated_power.value >= 15.58) {
-				priceNetto = 57850.35;
+				priceNetto = 60406.43;
 			}
 			if (calculated_power.value >= 15.99) {
-				priceNetto = 59127.91;
+				priceNetto = 61751.26;
 			}
 			if (calculated_power.value >= 16.4) {
-				priceNetto = 60319.89;
+				priceNetto = 63010.5;
 			}
 			if (calculated_power.value >= 16.81) {
-				priceNetto = 62805.16;
+				priceNetto = 65563.04;
 			}
 			if (calculated_power.value >= 17.22) {
-				priceNetto = 63816.94;
+				priceNetto = 66642.08;
 			}
 			if (calculated_power.value >= 17.63) {
-				priceNetto = 65054.5;
+				priceNetto = 67946.9;
 			}
 			if (calculated_power.value >= 18.04) {
-				priceNetto = 66233.89;
+				priceNetto = 69193.56;
 			}
 			if (calculated_power.value >= 18.45) {
-				priceNetto = 67894.8;
+				priceNetto = 70921.74;
 			}
 			if (calculated_power.value >= 18.86) {
-				priceNetto = 69070.0;
+				priceNetto = 72164.21;
 			}
 			if (calculated_power.value >= 19.27) {
-				priceNetto = 70479.36;
+				priceNetto = 73640.83;
 			}
 			if (calculated_power.value >= 19.68) {
-				priceNetto = 71654.57;
+				priceNetto = 74883.31;
 			}
 			if (calculated_power.value >= 20.09) {
-				priceNetto = 69199.13;
+				priceNetto = 72495.13;
 			}
 			if (calculated_power.value >= 20.5) {
-				priceNetto = 70168.36;
+				priceNetto = 73531.63;
 			}
 			if (calculated_power.value >= 20.91) {
-				priceNetto = 72417.23;
+				priceNetto = 75847.76;
 			}
 			if (calculated_power.value >= 21.32) {
-				priceNetto = 73417.63;
+				priceNetto = 76915.43;
 			}
 			if (calculated_power.value >= 21.73) {
-				priceNetto = 75077.43;
+				priceNetto = 78642.49;
 			}
 			if (calculated_power.value >= 22.14) {
-				priceNetto = 76067.16;
+				priceNetto = 79699.48;
 			}
 			if (calculated_power.value >= 22.55) {
-				priceNetto = 77291.03;
+				priceNetto = 80990.62;
 			}
 			if (calculated_power.value >= 22.96) {
-				priceNetto = 78280.75;
+				priceNetto = 82047.6;
 			}
 			if (calculated_power.value >= 23.37) {
-				priceNetto = 79940.54;
+				priceNetto = 83774.66;
 			}
 			if (calculated_power.value >= 23.78) {
-				priceNetto = 80406.05;
+				priceNetto = 84307.44;
 			}
 			if (calculated_power.value >= 24.19) {
-				priceNetto = 81620.89;
+				priceNetto = 85589.55;
 			}
 			if (calculated_power.value >= 24.6) {
-				priceNetto = 82806.98;
+				priceNetto = 86842.9;
 			}
 			if (calculated_power.value >= 25.01) {
-				priceNetto = 84683.08;
+				priceNetto = 88786.26;
 			}
 			if (calculated_power.value >= 25.42) {
-				priceNetto = 85663.76;
+				priceNetto = 89834.21;
 			}
 			if (calculated_power.value >= 25.83) {
-				priceNetto = 86878.59;
+				priceNetto = 91116.3;
 			}
 			if (calculated_power.value >= 26.24) {
-				priceNetto = 87859.28;
+				priceNetto = 92164.26;
 			}
 			if (calculated_power.value >= 26.65) {
-				priceNetto = 89612.74;
+				priceNetto = 93984.98;
 			}
 			if (calculated_power.value >= 27.06) {
-				priceNetto = 90593.43;
+				priceNetto = 95032.93;
 			}
 			if (calculated_power.value >= 27.47) {
-				priceNetto = 91808.26;
+				priceNetto = 96315.03;
 			}
 			if (calculated_power.value >= 27.88) {
-				priceNetto = 92994.36;
+				priceNetto = 97568.39;
 			}
 			if (calculated_power.value >= 28.29) {
-				priceNetto = 94645.11;
+				priceNetto = 99286.41;
 			}
 			if (calculated_power.value >= 28.7) {
-				priceNetto = 95625.8;
+				priceNetto = 100334.37;
 			}
 			if (calculated_power.value >= 29.11) {
-				priceNetto = 96840.63;
+				priceNetto = 101616.46;
 			}
 			if (calculated_power.value >= 29.52) {
-				priceNetto = 97821.32;
+				priceNetto = 102664.42;
 			}
 			if (calculated_power.value >= 29.93) {
-				priceNetto = 99472.07;
+				priceNetto = 104382.43;
 			}
 			if (calculated_power.value >= 30.34) {
-				priceNetto = 100452.76;
+				priceNetto = 105430.39;
 			}
 			if (calculated_power.value >= 30.75) {
-				priceNetto = 101667.59;
+				priceNetto = 106712.48;
 			}
 			if (calculated_power.value >= 31.16) {
-				priceNetto = 102648.27;
+				priceNetto = 107760.43;
 			}
 			if (calculated_power.value >= 31.57) {
-				priceNetto = 104320.39;
+				priceNetto = 109499.82;
 			}
 			if (calculated_power.value >= 32.39) {
-				priceNetto = 106515.91;
+				priceNetto = 111762.6;
 			}
 			if (calculated_power.value >= 32.8) {
-				priceNetto = 107496.59;
+				priceNetto = 112810.55;
 			}
 			if (calculated_power.value >= 33.21) {
-				priceNetto = 109871.42;
+				priceNetto = 115252.64;
 			}
 			if (calculated_power.value >= 33.62) {
-				priceNetto = 110852.1;
+				priceNetto = 116300.59;
 			}
 			if (calculated_power.value >= 34.03) {
-				priceNetto = 112785.88;
+				priceNetto = 118301.63;
 			}
 			if (calculated_power.value >= 34.44) {
-				priceNetto = 113766.55;
+				priceNetto = 119349.57;
 			}
 			if (calculated_power.value >= 34.85) {
-				priceNetto = 115417.31;
+				priceNetto = 121067.59;
 			}
 			if (calculated_power.value >= 35.26) {
-				priceNetto = 116398.0;
+				priceNetto = 122115.54;
 			}
 			if (calculated_power.value >= 35.67) {
-				priceNetto = 117612.83;
+				priceNetto = 123397.64;
 			}
 			if (calculated_power.value >= 36.08) {
-				priceNetto = 118593.51;
+				priceNetto = 124445.59;
 			}
 			if (calculated_power.value >= 36.49) {
-				priceNetto = 120265.63;
+				priceNetto = 126184.97;
 			}
 			if (calculated_power.value >= 36.9) {
-				priceNetto = 121246.32;
+				priceNetto = 127232.93;
 			}
 			if (calculated_power.value >= 37.31) {
-				priceNetto = 122461.15;
+				priceNetto = 128515.02;
 			}
 			if (calculated_power.value >= 37.72) {
-				priceNetto = 123441.84;
+				priceNetto = 129562.98;
 			}
 			if (calculated_power.value >= 38.13) {
-				priceNetto = 125092.59;
+				priceNetto = 131280.99;
 			}
 			if (calculated_power.value >= 38.54) {
-				priceNetto = 126073.28;
+				priceNetto = 132328.95;
 			}
 			if (calculated_power.value >= 38.95) {
-				priceNetto = 127288.11;
+				priceNetto = 133611.04;
 			}
 			if (calculated_power.value >= 39.36) {
-				priceNetto = 128268.8;
+				priceNetto = 134659.0;
 			}
 			if (calculated_power.value >= 39.77) {
-				priceNetto = 130689.84;
+				priceNetto = 137147.3;
 			}
 			if (calculated_power.value >= 40.18) {
-				priceNetto = 131670.53;
+				priceNetto = 138195.26;
 			}
 			if (calculated_power.value >= 40.59) {
-				priceNetto = 132885.36;
+				priceNetto = 139477.35;
 			}
-			if (calculated_power.value >= 41) {
-				priceNetto = 133866.04;
+			if (calculated_power.value >= 41.0) {
+				priceNetto = 140525.3;
 			}
 			if (calculated_power.value >= 41.41) {
-				priceNetto = 135692.42;
+				priceNetto = 142418.95;
 			}
 			if (calculated_power.value >= 41.82) {
-				priceNetto = 137153.76;
+				priceNetto = 143947.56;
 			}
 			if (calculated_power.value >= 42.23) {
-				priceNetto = 139421.65;
+				priceNetto = 146282.71;
 			}
 			if (calculated_power.value >= 42.64) {
-				priceNetto = 140402.34;
+				priceNetto = 147330.66;
 			}
 			if (calculated_power.value >= 43.05) {
-				priceNetto = 142053.09;
+				priceNetto = 149048.68;
 			}
 			if (calculated_power.value >= 43.46) {
-				priceNetto = 143033.78;
+				priceNetto = 150096.63;
 			}
 			if (calculated_power.value >= 43.87) {
-				priceNetto = 144248.61;
+				priceNetto = 151378.73;
 			}
 			if (calculated_power.value >= 44.28) {
-				priceNetto = 145229.3;
+				priceNetto = 152426.68;
 			}
 			if (calculated_power.value >= 44.69) {
-				priceNetto = 146880.05;
+				priceNetto = 154144.7;
 			}
 			if (calculated_power.value >= 45.1) {
-				priceNetto = 147860.74;
+				priceNetto = 155192.66;
 			}
 			if (calculated_power.value >= 45.51) {
-				priceNetto = 149075.57;
+				priceNetto = 156474.75;
 			}
 			if (calculated_power.value >= 45.92) {
-				priceNetto = 150056.25;
+				priceNetto = 157522.69;
 			}
 			if (calculated_power.value >= 46.33) {
-				priceNetto = 151707.01;
+				priceNetto = 159240.72;
 			}
 			if (calculated_power.value >= 46.74) {
-				priceNetto = 153201.22;
+				priceNetto = 160802.19;
 			}
 			if (calculated_power.value >= 47.15) {
-				priceNetto = 154416.06;
+				priceNetto = 162084.3;
 			}
 			if (calculated_power.value >= 47.56) {
-				priceNetto = 155396.73;
+				priceNetto = 163132.24;
 			}
 			if (calculated_power.value >= 47.97) {
-				priceNetto = 157047.5;
+				priceNetto = 164850.27;
 			}
 			if (calculated_power.value >= 48.38) {
-				priceNetto = 158028.18;
+				priceNetto = 165898.21;
 			}
 			if (calculated_power.value >= 48.79) {
-				priceNetto = 159243.01;
+				priceNetto = 167180.31;
 			}
 			if (calculated_power.value >= 49.2) {
-				priceNetto = 160223.7;
+				priceNetto = 168228.26;
 			}
 			if (calculated_power.value >= 49.61) {
-				priceNetto = 161201.75;
+				priceNetto = 169273.58;
 			}
 		}
 
 		if (roofing.value == 2) {
-			if (calculated_power >= 2.05) {
-				priceNetto = 13358.22;
+			if (calculated_power.value >= 2.05) {
+				priceNetto = 13960.31;
 			}
-			if (calculated_power >= 2.46) {
-				priceNetto = 15149.28;
+			if (calculated_power.value >= 2.46) {
+				priceNetto = 15871.79;
 			}
-			if (calculated_power >= 2.87) {
-				priceNetto = 16920.25;
+			if (calculated_power.value >= 2.87) {
+				priceNetto = 17763.18;
 			}
-			if (calculated_power >= 3.28) {
-				priceNetto = 17995.05;
+			if (calculated_power.value >= 3.28) {
+				priceNetto = 18958.39;
 			}
-			if (calculated_power >= 3.69) {
-				priceNetto = 19576.05;
+			if (calculated_power.value >= 3.69) {
+				priceNetto = 20659.81;
 			}
-			if (calculated_power >= 4.1) {
-				priceNetto = 21149.04;
+			if (calculated_power.value >= 4.1) {
+				priceNetto = 22353.22;
 			}
-			if (calculated_power >= 4.51) {
-				priceNetto = 22467.51;
+			if (calculated_power.value >= 4.51) {
+				priceNetto = 23792.11;
 			}
-			if (calculated_power >= 4.92) {
-				priceNetto = 23998.43;
+			if (calculated_power.value >= 4.92) {
+				priceNetto = 25443.45;
 			}
-			if (calculated_power >= 5.33) {
-				priceNetto = 26293.79;
+			if (calculated_power.value >= 5.33) {
+				priceNetto = 27859.22;
 			}
-			if (calculated_power >= 5.74) {
-				priceNetto = 27504.46;
+			if (calculated_power.value >= 5.74) {
+				priceNetto = 29190.31;
 			}
-			if (calculated_power >= 6.15) {
-				priceNetto = 29042.17;
+			if (calculated_power.value >= 6.15) {
+				priceNetto = 30848.44;
 			}
-			if (calculated_power >= 6.56) {
-				priceNetto = 30580.38;
+			if (calculated_power.value >= 6.56) {
+				priceNetto = 32507.07;
 			}
-			if (calculated_power >= 6.97) {
-				priceNetto = 33423.61;
+			if (calculated_power.value >= 6.97) {
+				priceNetto = 35470.72;
 			}
-			if (calculated_power >= 7.38) {
-				priceNetto = 34723.74;
+			if (calculated_power.value >= 7.38) {
+				priceNetto = 36891.26;
 			}
-			if (calculated_power >= 7.79) {
-				priceNetto = 36088.79;
+			if (calculated_power.value >= 7.79) {
+				priceNetto = 38376.73;
 			}
-			if (calculated_power >= 8.2) {
-				priceNetto = 37184.51;
+			if (calculated_power.value >= 8.2) {
+				priceNetto = 39592.87;
 			}
-			if (calculated_power >= 8.61) {
-				priceNetto = 38268.71;
+			if (calculated_power.value >= 8.61) {
+				priceNetto = 40797.49;
 			}
-			if (calculated_power >= 9.02) {
-				priceNetto = 39242.67;
+			if (calculated_power.value >= 9.02) {
+				priceNetto = 41891.87;
 			}
-			if (calculated_power >= 9.43) {
-				priceNetto = 40874.33;
+			if (calculated_power.value >= 9.43) {
+				priceNetto = 43643.94;
 			}
-			if (calculated_power >= 9.84) {
-				priceNetto = 41786.96;
+			if (calculated_power.value >= 9.84) {
+				priceNetto = 44676.99;
 			}
-			if (calculated_power >= 10.25) {
-				priceNetto = 44919.06;
+			if (calculated_power.value >= 10.25) {
+				priceNetto = 47620.39;
 			}
-			if (calculated_power >= 10.66) {
-				priceNetto = 47746.33;
+			if (calculated_power.value >= 10.66) {
+				priceNetto = 50555.72;
 			}
-			if (calculated_power >= 11.07) {
-				priceNetto = 49462.74;
+			if (calculated_power.value >= 11.07) {
+				priceNetto = 52380.18;
 			}
-			if (calculated_power >= 11.48) {
-				priceNetto = 50934.32;
+			if (calculated_power.value >= 11.48) {
+				priceNetto = 53959.82;
 			}
-			if (calculated_power >= 11.89) {
-				priceNetto = 53075.97;
+			if (calculated_power.value >= 11.89) {
+				priceNetto = 56209.52;
 			}
-			if (calculated_power >= 12.3) {
-				priceNetto = 54170.4;
+			if (calculated_power.value >= 12.3) {
+				priceNetto = 57412.0;
 			}
-			if (calculated_power >= 12.71) {
-				priceNetto = 54588.58;
+			if (calculated_power.value >= 12.71) {
+				priceNetto = 57938.24;
 			}
-			if (calculated_power >= 13.12) {
-				priceNetto = 56002.39;
+			if (calculated_power.value >= 13.12) {
+				priceNetto = 59460.1;
 			}
-			if (calculated_power >= 13.53) {
-				priceNetto = 59774.74;
+			if (calculated_power.value >= 13.53) {
+				priceNetto = 63340.5;
 			}
-			if (calculated_power >= 14.28) {
-				priceNetto = 60952.91;
+			if (calculated_power.value >= 14.28) {
+				priceNetto = 64626.72;
 			}
-			if (calculated_power >= 14.35) {
-				priceNetto = 62495.12;
+			if (calculated_power.value >= 14.35) {
+				priceNetto = 66276.99;
 			}
-			if (calculated_power >= 14.76) {
-				priceNetto = 63945.67;
+			if (calculated_power.value >= 14.76) {
+				priceNetto = 67835.59;
 			}
-			if (calculated_power >= 15.17) {
-				priceNetto = 65911.23;
+			if (calculated_power.value >= 15.17) {
+				priceNetto = 69909.21;
 			}
-			if (calculated_power >= 15.58) {
-				priceNetto = 57850.35;
+			if (calculated_power.value >= 15.58) {
+				priceNetto = 61956.39;
 			}
-			if (calculated_power >= 15.99) {
-				priceNetto = 59127.91;
+			if (calculated_power.value >= 15.99) {
+				priceNetto = 63342.0;
 			}
-			if (calculated_power >= 16.4) {
-				priceNetto = 60319.89;
+			if (calculated_power.value >= 16.4) {
+				priceNetto = 64642.02;
 			}
-			if (calculated_power >= 16.81) {
-				priceNetto = 62805.16;
+			if (calculated_power.value >= 16.81) {
+				priceNetto = 67235.35;
 			}
-			if (calculated_power >= 17.22) {
-				priceNetto = 63816.94;
+			if (calculated_power.value >= 17.22) {
+				priceNetto = 68355.19;
 			}
-			if (calculated_power >= 17.63) {
-				priceNetto = 65054.5;
+			if (calculated_power.value >= 17.63) {
+				priceNetto = 69700.79;
 			}
-			if (calculated_power >= 18.04) {
-				priceNetto = 66233.89;
+			if (calculated_power.value >= 18.04) {
+				priceNetto = 70988.24;
 			}
-			if (calculated_power >= 18.45) {
-				priceNetto = 67894.8;
+			if (calculated_power.value >= 18.45) {
+				priceNetto = 72757.21;
 			}
-			if (calculated_power >= 18.86) {
-				priceNetto = 69070.0;
+			if (calculated_power.value >= 18.86) {
+				priceNetto = 74040.46;
 			}
-			if (calculated_power >= 19.27) {
-				priceNetto = 70479.36;
+			if (calculated_power.value >= 19.27) {
+				priceNetto = 75557.87;
 			}
-			if (calculated_power >= 19.68) {
-				priceNetto = 71654.57;
+			if (calculated_power.value >= 19.68) {
+				priceNetto = 76841.14;
 			}
-			if (calculated_power >= 20.09) {
-				priceNetto = 69199.13;
+			if (calculated_power.value >= 20.09) {
+				priceNetto = 74493.75;
 			}
-			if (calculated_power >= 20.5) {
-				priceNetto = 70168.36;
+			if (calculated_power.value >= 20.5) {
+				priceNetto = 75571.04;
 			}
-			if (calculated_power >= 20.91) {
-				priceNetto = 72417.23;
+			if (calculated_power.value >= 20.91) {
+				priceNetto = 77927.96;
 			}
-			if (calculated_power >= 21.32) {
-				priceNetto = 73417.63;
+			if (calculated_power.value >= 21.32) {
+				priceNetto = 79036.41;
 			}
-			if (calculated_power >= 21.73) {
-				priceNetto = 75077.43;
+			if (calculated_power.value >= 21.73) {
+				priceNetto = 80804.26;
 			}
-			if (calculated_power >= 22.14) {
-				priceNetto = 76067.16;
+			if (calculated_power.value >= 22.14) {
+				priceNetto = 81902.04;
 			}
-			if (calculated_power >= 22.55) {
-				priceNetto = 77291.03;
+			if (calculated_power.value >= 22.55) {
+				priceNetto = 83233.97;
 			}
-			if (calculated_power >= 22.96) {
-				priceNetto = 78280.75;
+			if (calculated_power.value >= 22.96) {
+				priceNetto = 84331.74;
 			}
-			if (calculated_power >= 23.37) {
-				priceNetto = 79940.54;
+			if (calculated_power.value >= 23.37) {
+				priceNetto = 86099.59;
 			}
-			if (calculated_power >= 23.78) {
-				priceNetto = 80406.05;
+			if (calculated_power.value >= 23.78) {
+				priceNetto = 86673.15;
 			}
-			if (calculated_power >= 24.19) {
-				priceNetto = 81620.89;
+			if (calculated_power.value >= 24.19) {
+				priceNetto = 87996.05;
 			}
-			if (calculated_power >= 24.6) {
-				priceNetto = 82806.98;
+			if (calculated_power.value >= 24.6) {
+				priceNetto = 89290.19;
 			}
-			if (calculated_power >= 25.01) {
-				priceNetto = 84683.08;
+			if (calculated_power.value >= 25.01) {
+				priceNetto = 91274.34;
 			}
-			if (calculated_power >= 25.42) {
-				priceNetto = 85663.76;
+			if (calculated_power.value >= 25.42) {
+				priceNetto = 92363.07;
 			}
-			if (calculated_power >= 25.83) {
-				priceNetto = 86878.59;
+			if (calculated_power.value >= 25.83) {
+				priceNetto = 93685.96;
 			}
-			if (calculated_power >= 26.24) {
-				priceNetto = 87859.28;
+			if (calculated_power.value >= 26.24) {
+				priceNetto = 94774.7;
 			}
-			if (calculated_power >= 26.65) {
-				priceNetto = 89612.74;
+			if (calculated_power.value >= 26.65) {
+				priceNetto = 96636.21;
 			}
-			if (calculated_power >= 27.06) {
-				priceNetto = 90593.43;
+			if (calculated_power.value >= 27.06) {
+				priceNetto = 97724.95;
 			}
-			if (calculated_power >= 27.47) {
-				priceNetto = 91808.26;
+			if (calculated_power.value >= 27.47) {
+				priceNetto = 99047.84;
 			}
-			if (calculated_power >= 27.88) {
-				priceNetto = 92994.36;
+			if (calculated_power.value >= 27.88) {
+				priceNetto = 100341.99;
 			}
-			if (calculated_power >= 28.29) {
-				priceNetto = 94645.11;
+			if (calculated_power.value >= 28.29) {
+				priceNetto = 102100.8;
 			}
-			if (calculated_power >= 28.7) {
-				priceNetto = 95625.8;
+			if (calculated_power.value >= 28.7) {
+				priceNetto = 103189.54;
 			}
-			if (calculated_power >= 29.11) {
-				priceNetto = 96840.63;
+			if (calculated_power.value >= 29.11) {
+				priceNetto = 104512.42;
 			}
-			if (calculated_power >= 29.52) {
-				priceNetto = 97821.32;
+			if (calculated_power.value >= 29.52) {
+				priceNetto = 105601.16;
 			}
-			if (calculated_power >= 29.93) {
-				priceNetto = 99472.07;
+			if (calculated_power.value >= 29.93) {
+				priceNetto = 107359.97;
 			}
-			if (calculated_power >= 30.34) {
-				priceNetto = 100452.76;
+			if (calculated_power.value >= 30.34) {
+				priceNetto = 108448.71;
 			}
-			if (calculated_power >= 30.75) {
-				priceNetto = 101667.59;
+			if (calculated_power.value >= 30.75) {
+				priceNetto = 109771.6;
 			}
-			if (calculated_power >= 31.16) {
-				priceNetto = 102648.27;
+			if (calculated_power.value >= 31.16) {
+				priceNetto = 110860.33;
 			}
-			if (calculated_power >= 31.57) {
-				priceNetto = 104320.39;
+			if (calculated_power.value >= 31.57) {
+				priceNetto = 112640.51;
 			}
-			if (calculated_power >= 32.39) {
-				priceNetto = 106515.91;
+			if (calculated_power.value >= 32.39) {
+				priceNetto = 114944.08;
 			}
-			if (calculated_power >= 32.8) {
-				priceNetto = 107496.59;
+			if (calculated_power.value >= 32.8) {
+				priceNetto = 116032.81;
 			}
-			if (calculated_power >= 33.21) {
-				priceNetto = 109871.42;
+			if (calculated_power.value >= 33.21) {
+				priceNetto = 118515.7;
 			}
-			if (calculated_power >= 33.62) {
-				priceNetto = 110852.1;
+			if (calculated_power.value >= 33.62) {
+				priceNetto = 119604.43;
 			}
-			if (calculated_power >= 34.03) {
-				priceNetto = 112785.88;
+			if (calculated_power.value >= 34.03) {
+				priceNetto = 121646.26;
 			}
-			if (calculated_power >= 34.44) {
-				priceNetto = 113766.55;
+			if (calculated_power.value >= 34.44) {
+				priceNetto = 122734.99;
 			}
-			if (calculated_power >= 34.85) {
-				priceNetto = 115417.31;
+			if (calculated_power.value >= 34.85) {
+				priceNetto = 124493.8;
 			}
-			if (calculated_power >= 35.26) {
-				priceNetto = 116398.0;
+			if (calculated_power.value >= 35.26) {
+				priceNetto = 125582.54;
 			}
-			if (calculated_power >= 35.67) {
-				priceNetto = 117612.83;
+			if (calculated_power.value >= 35.67) {
+				priceNetto = 126905.42;
 			}
-			if (calculated_power >= 36.08) {
-				priceNetto = 118593.51;
+			if (calculated_power.value >= 36.08) {
+				priceNetto = 127994.16;
 			}
-			if (calculated_power >= 36.49) {
-				priceNetto = 120265.63;
+			if (calculated_power.value >= 36.49) {
+				priceNetto = 129774.33;
 			}
-			if (calculated_power >= 36.9) {
-				priceNetto = 121246.32;
+			if (calculated_power.value >= 36.9) {
+				priceNetto = 130863.07;
 			}
-			if (calculated_power >= 37.31) {
-				priceNetto = 122461.15;
+			if (calculated_power.value >= 37.31) {
+				priceNetto = 132185.96;
 			}
-			if (calculated_power >= 37.72) {
-				priceNetto = 123441.84;
+			if (calculated_power.value >= 37.72) {
+				priceNetto = 133274.7;
 			}
-			if (calculated_power >= 38.13) {
-				priceNetto = 125092.59;
+			if (calculated_power.value >= 38.13) {
+				priceNetto = 135033.51;
 			}
-			if (calculated_power >= 38.54) {
-				priceNetto = 126073.28;
+			if (calculated_power.value >= 38.54) {
+				priceNetto = 136122.25;
 			}
-			if (calculated_power >= 38.95) {
-				priceNetto = 127288.11;
+			if (calculated_power.value >= 38.95) {
+				priceNetto = 137445.13;
 			}
-			if (calculated_power >= 39.36) {
-				priceNetto = 128268.8;
+			if (calculated_power.value >= 39.36) {
+				priceNetto = 138533.88;
 			}
-			if (calculated_power >= 39.77) {
-				priceNetto = 130689.84;
+			if (calculated_power.value >= 39.77) {
+				priceNetto = 141062.97;
 			}
-			if (calculated_power >= 40.18) {
-				priceNetto = 131670.53;
+			if (calculated_power.value >= 40.18) {
+				priceNetto = 142151.71;
 			}
-			if (calculated_power >= 40.59) {
-				priceNetto = 132885.36;
+			if (calculated_power.value >= 40.59) {
+				priceNetto = 143474.59;
 			}
-			if (calculated_power >= 41.0) {
-				priceNetto = 133866.04;
+			if (calculated_power.value >= 41.0) {
+				priceNetto = 144563.33;
 			}
-			if (calculated_power >= 41.41) {
-				priceNetto = 135692.42;
+			if (calculated_power.value >= 41.41) {
+				priceNetto = 146497.77;
 			}
-			if (calculated_power >= 41.82) {
-				priceNetto = 137153.76;
+			if (calculated_power.value >= 41.82) {
+				priceNetto = 148067.16;
 			}
-			if (calculated_power >= 42.23) {
-				priceNetto = 139421.65;
+			if (calculated_power.value >= 42.23) {
+				priceNetto = 150443.1;
 			}
-			if (calculated_power >= 42.64) {
-				priceNetto = 140402.34;
+			if (calculated_power.value >= 42.64) {
+				priceNetto = 151531.84;
 			}
-			if (calculated_power >= 43.05) {
-				priceNetto = 142053.09;
+			if (calculated_power.value >= 43.05) {
+				priceNetto = 153290.65;
 			}
-			if (calculated_power >= 43.46) {
-				priceNetto = 143033.78;
+			if (calculated_power.value >= 43.46) {
+				priceNetto = 154379.39;
 			}
-			if (calculated_power >= 43.87) {
-				priceNetto = 144248.61;
+			if (calculated_power.value >= 43.87) {
+				priceNetto = 155702.27;
 			}
-			if (calculated_power >= 44.28) {
-				priceNetto = 145229.3;
+			if (calculated_power.value >= 44.28) {
+				priceNetto = 156791.02;
 			}
-			if (calculated_power >= 44.69) {
-				priceNetto = 146880.05;
+			if (calculated_power.value >= 44.69) {
+				priceNetto = 158549.82;
 			}
-			if (calculated_power >= 45.1) {
-				priceNetto = 147860.74;
+			if (calculated_power.value >= 45.1) {
+				priceNetto = 159638.57;
 			}
-			if (calculated_power >= 45.51) {
-				priceNetto = 149075.57;
+			if (calculated_power.value >= 45.51) {
+				priceNetto = 160961.45;
 			}
-			if (calculated_power >= 45.92) {
-				priceNetto = 150056.25;
+			if (calculated_power.value >= 45.92) {
+				priceNetto = 162050.18;
 			}
-			if (calculated_power >= 46.33) {
-				priceNetto = 151707.01;
+			if (calculated_power.value >= 46.33) {
+				priceNetto = 163809.0;
 			}
-			if (calculated_power >= 46.74) {
-				priceNetto = 153201.22;
+			if (calculated_power.value >= 46.74) {
+				priceNetto = 165411.25;
 			}
-			if (calculated_power >= 47.15) {
-				priceNetto = 154416.06;
+			if (calculated_power.value >= 47.15) {
+				priceNetto = 166734.15;
 			}
-			if (calculated_power >= 47.56) {
-				priceNetto = 155396.73;
+			if (calculated_power.value >= 47.56) {
+				priceNetto = 167822.88;
 			}
-			if (calculated_power >= 47.97) {
-				priceNetto = 157047.5;
+			if (calculated_power.value >= 47.97) {
+				priceNetto = 169581.7;
 			}
-			if (calculated_power >= 48.38) {
-				priceNetto = 158028.18;
+			if (calculated_power.value >= 48.38) {
+				priceNetto = 170670.43;
 			}
-			if (calculated_power >= 48.79) {
-				priceNetto = 159243.01;
+			if (calculated_power.value >= 48.79) {
+				priceNetto = 171993.31;
 			}
-			if (calculated_power >= 49.2) {
-				priceNetto = 160223.7;
+			if (calculated_power.value >= 49.2) {
+				priceNetto = 173082.06;
 			}
-			if (calculated_power >= 49.61) {
-				priceNetto = 161201.75;
+			if (calculated_power.value >= 49.61) {
+				priceNetto = 174168.16;
 			}
 		}
 
 		if (roofing.value == 3) {
-			if (calculated_power >= 2.05) {
-				priceNetto = 13358.22;
+			if (calculated_power.value >= 2.05) {
+				priceNetto = 14009.89;
 			}
-			if (calculated_power >= 2.46) {
-				priceNetto = 15149.28;
+			if (calculated_power.value >= 2.46) {
+				priceNetto = 15931.28;
 			}
-			if (calculated_power >= 2.87) {
-				priceNetto = 16920.25;
+			if (calculated_power.value >= 2.87) {
+				priceNetto = 17832.58;
 			}
-			if (calculated_power >= 3.28) {
-				priceNetto = 17995.05;
+			if (calculated_power.value >= 3.28) {
+				priceNetto = 19037.72;
 			}
-			if (calculated_power >= 3.69) {
-				priceNetto = 19576.05;
+			if (calculated_power.value >= 3.69) {
+				priceNetto = 20749.05;
 			}
-			if (calculated_power >= 4.1) {
-				priceNetto = 21149.04;
+			if (calculated_power.value >= 4.1) {
+				priceNetto = 22452.37;
 			}
-			if (calculated_power >= 4.51) {
-				priceNetto = 22467.51;
+			if (calculated_power.value >= 4.51) {
+				priceNetto = 23901.18;
 			}
-			if (calculated_power >= 4.92) {
-				priceNetto = 23998.43;
+			if (calculated_power.value >= 4.92) {
+				priceNetto = 25562.43;
 			}
-			if (calculated_power >= 5.33) {
-				priceNetto = 26293.79;
+			if (calculated_power.value >= 5.33) {
+				priceNetto = 27988.12;
 			}
-			if (calculated_power >= 5.74) {
-				priceNetto = 27504.46;
+			if (calculated_power.value >= 5.74) {
+				priceNetto = 29329.12;
 			}
-			if (calculated_power >= 6.15) {
-				priceNetto = 29042.17;
+			if (calculated_power.value >= 6.15) {
+				priceNetto = 30997.17;
 			}
-			if (calculated_power >= 6.56) {
-				priceNetto = 30580.38;
+			if (calculated_power.value >= 6.56) {
+				priceNetto = 32665.71;
 			}
-			if (calculated_power >= 6.97) {
-				priceNetto = 33423.61;
+			if (calculated_power.value >= 6.97) {
+				priceNetto = 35639.27;
 			}
-			if (calculated_power >= 7.38) {
-				priceNetto = 34723.74;
+			if (calculated_power.value >= 7.38) {
+				priceNetto = 37069.74;
 			}
-			if (calculated_power >= 7.79) {
-				priceNetto = 36088.79;
+			if (calculated_power.value >= 7.79) {
+				priceNetto = 38565.12;
 			}
-			if (calculated_power >= 8.2) {
-				priceNetto = 37184.51;
+			if (calculated_power.value >= 8.2) {
+				priceNetto = 39791.17;
 			}
-			if (calculated_power >= 8.61) {
-				priceNetto = 38268.71;
+			if (calculated_power.value >= 8.61) {
+				priceNetto = 41005.71;
 			}
-			if (calculated_power >= 9.02) {
-				priceNetto = 39242.67;
+			if (calculated_power.value >= 9.02) {
+				priceNetto = 42110.0;
 			}
-			if (calculated_power >= 9.43) {
-				priceNetto = 40874.33;
+			if (calculated_power.value >= 9.43) {
+				priceNetto = 43871.99;
 			}
-			if (calculated_power >= 9.84) {
-				priceNetto = 41786.96;
+			if (calculated_power.value >= 9.84) {
+				priceNetto = 44914.96;
 			}
-			if (calculated_power >= 10.25) {
-				priceNetto = 44919.06;
+			if (calculated_power.value >= 10.25) {
+				priceNetto = 48258.85;
 			}
-			if (calculated_power >= 10.66) {
-				priceNetto = 47746.33;
+			if (calculated_power.value >= 10.66) {
+				priceNetto = 51219.71;
 			}
-			if (calculated_power >= 11.07) {
-				priceNetto = 49462.74;
+			if (calculated_power.value >= 11.07) {
+				priceNetto = 53069.71;
 			}
-			if (calculated_power >= 11.48) {
-				priceNetto = 50934.32;
+			if (calculated_power.value >= 11.48) {
+				priceNetto = 54674.88;
 			}
-			if (calculated_power >= 11.89) {
-				priceNetto = 53075.97;
+			if (calculated_power.value >= 11.89) {
+				priceNetto = 56950.12;
 			}
-			if (calculated_power >= 12.3) {
-				priceNetto = 54170.4;
+			if (calculated_power.value >= 12.3) {
+				priceNetto = 58178.15;
 			}
-			if (calculated_power >= 12.71) {
-				priceNetto = 54588.58;
+			if (calculated_power.value >= 12.71) {
+				priceNetto = 58729.92;
 			}
-			if (calculated_power >= 13.12) {
-				priceNetto = 56002.39;
+			if (calculated_power.value >= 13.12) {
+				priceNetto = 60277.32;
 			}
-			if (calculated_power >= 13.53) {
-				priceNetto = 59774.74;
+			if (calculated_power.value >= 13.53) {
+				priceNetto = 64183.26;
 			}
-			if (calculated_power >= 14.28) {
-				priceNetto = 60952.91;
+			if (calculated_power.value >= 14.28) {
+				priceNetto = 65495.02;
 			}
-			if (calculated_power >= 14.35) {
-				priceNetto = 62495.12;
+			if (calculated_power.value >= 14.35) {
+				priceNetto = 67170.82;
 			}
-			if (calculated_power >= 14.76) {
-				priceNetto = 63945.67;
+			if (calculated_power.value >= 14.76) {
+				priceNetto = 68754.97;
 			}
-			if (calculated_power >= 15.17) {
-				priceNetto = 65911.23;
+			if (calculated_power.value >= 15.17) {
+				priceNetto = 70854.12;
 			}
-			if (calculated_power >= 15.58) {
-				priceNetto = 57850.35;
+			if (calculated_power.value >= 15.58) {
+				priceNetto = 62926.83;
 			}
-			if (calculated_power >= 15.99) {
-				priceNetto = 59127.91;
+			if (calculated_power.value >= 15.99) {
+				priceNetto = 64337.98;
 			}
-			if (calculated_power >= 16.4) {
-				priceNetto = 60319.89;
+			if (calculated_power.value >= 16.4) {
+				priceNetto = 65663.55;
 			}
-			if (calculated_power >= 16.81) {
-				priceNetto = 62805.16;
+			if (calculated_power.value >= 16.81) {
+				priceNetto = 68282.42;
 			}
-			if (calculated_power >= 17.22) {
-				priceNetto = 63816.94;
+			if (calculated_power.value >= 17.22) {
+				priceNetto = 69427.79;
 			}
-			if (calculated_power >= 17.63) {
-				priceNetto = 65054.5;
+			if (calculated_power.value >= 17.63) {
+				priceNetto = 70798.93;
 			}
-			if (calculated_power >= 18.04) {
-				priceNetto = 66233.89;
+			if (calculated_power.value >= 18.04) {
+				priceNetto = 72111.92;
 			}
-			if (calculated_power >= 18.45) {
-				priceNetto = 67894.8;
+			if (calculated_power.value >= 18.45) {
+				priceNetto = 73906.42;
 			}
-			if (calculated_power >= 18.86) {
-				priceNetto = 69070.0;
+			if (calculated_power.value >= 18.86) {
+				priceNetto = 75215.21;
 			}
-			if (calculated_power >= 19.27) {
-				priceNetto = 70479.36;
+			if (calculated_power.value >= 19.27) {
+				priceNetto = 76758.16;
 			}
-			if (calculated_power >= 19.68) {
-				priceNetto = 71654.57;
+			if (calculated_power.value >= 19.68) {
+				priceNetto = 78066.97;
 			}
-			if (calculated_power >= 20.09) {
-				priceNetto = 69199.13;
+			if (calculated_power.value >= 20.09) {
+				priceNetto = 75745.12;
 			}
-			if (calculated_power >= 20.5) {
-				priceNetto = 70168.36;
+			if (calculated_power.value >= 20.5) {
+				priceNetto = 76847.94;
 			}
-			if (calculated_power >= 20.91) {
-				priceNetto = 72417.23;
+			if (calculated_power.value >= 20.91) {
+				priceNetto = 79230.4;
 			}
-			if (calculated_power >= 21.32) {
-				priceNetto = 73417.63;
+			if (calculated_power.value >= 21.32) {
+				priceNetto = 80364.39;
 			}
-			if (calculated_power >= 21.73) {
-				priceNetto = 75077.43;
+			if (calculated_power.value >= 21.73) {
+				priceNetto = 82157.78;
 			}
-			if (calculated_power >= 22.14) {
-				priceNetto = 76067.16;
+			if (calculated_power.value >= 22.14) {
+				priceNetto = 83281.1;
 			}
-			if (calculated_power >= 22.55) {
-				priceNetto = 77291.03;
+			if (calculated_power.value >= 22.55) {
+				priceNetto = 84638.56;
 			}
-			if (calculated_power >= 22.96) {
-				priceNetto = 78280.75;
+			if (calculated_power.value >= 22.96) {
+				priceNetto = 85761.87;
 			}
-			if (calculated_power >= 23.37) {
-				priceNetto = 79940.54;
+			if (calculated_power.value >= 23.37) {
+				priceNetto = 87555.26;
 			}
-			if (calculated_power >= 23.78) {
-				priceNetto = 80406.05;
+			if (calculated_power.value >= 23.78) {
+				priceNetto = 88154.36;
 			}
-			if (calculated_power >= 24.19) {
-				priceNetto = 81620.89;
+			if (calculated_power.value >= 24.19) {
+				priceNetto = 89502.79;
 			}
-			if (calculated_power >= 24.6) {
-				priceNetto = 82806.98;
+			if (calculated_power.value >= 24.6) {
+				priceNetto = 90822.47;
 			}
-			if (calculated_power >= 25.01) {
-				priceNetto = 84683.08;
+			if (calculated_power.value >= 25.01) {
+				priceNetto = 92832.16;
 			}
-			if (calculated_power >= 25.42) {
-				priceNetto = 85663.76;
+			if (calculated_power.value >= 25.42) {
+				priceNetto = 93946.43;
 			}
-			if (calculated_power >= 25.83) {
-				priceNetto = 86878.59;
+			if (calculated_power.value >= 25.83) {
+				priceNetto = 95294.86;
 			}
-			if (calculated_power >= 26.24) {
-				priceNetto = 87859.28;
+			if (calculated_power.value >= 26.24) {
+				priceNetto = 96409.14;
 			}
-			if (calculated_power >= 26.65) {
-				priceNetto = 89612.74;
+			if (calculated_power.value >= 26.65) {
+				priceNetto = 98296.19;
 			}
-			if (calculated_power >= 27.06) {
-				priceNetto = 90593.43;
+			if (calculated_power.value >= 27.06) {
+				priceNetto = 99410.47;
 			}
-			if (calculated_power >= 27.47) {
-				priceNetto = 91808.26;
+			if (calculated_power.value >= 27.47) {
+				priceNetto = 100758.89;
 			}
-			if (calculated_power >= 27.88) {
-				priceNetto = 92994.36;
+			if (calculated_power.value >= 27.88) {
+				priceNetto = 102078.58;
 			}
-			if (calculated_power >= 28.29) {
-				priceNetto = 94645.11;
+			if (calculated_power.value >= 28.29) {
+				priceNetto = 103862.92;
 			}
-			if (calculated_power >= 28.7) {
-				priceNetto = 95625.8;
+			if (calculated_power.value >= 28.7) {
+				priceNetto = 104977.2;
 			}
-			if (calculated_power >= 29.11) {
-				priceNetto = 96840.63;
+			if (calculated_power.value >= 29.11) {
+				priceNetto = 106325.63;
 			}
-			if (calculated_power >= 29.52) {
-				priceNetto = 97821.32;
+			if (calculated_power.value >= 29.52) {
+				priceNetto = 107439.91;
 			}
-			if (calculated_power >= 29.93) {
-				priceNetto = 99472.07;
+			if (calculated_power.value >= 29.93) {
+				priceNetto = 109224.25;
 			}
-			if (calculated_power >= 30.34) {
-				priceNetto = 100452.76;
+			if (calculated_power.value >= 30.34) {
+				priceNetto = 110338.53;
 			}
-			if (calculated_power >= 30.75) {
-				priceNetto = 101667.59;
+			if (calculated_power.value >= 30.75) {
+				priceNetto = 111686.95;
 			}
-			if (calculated_power >= 31.16) {
-				priceNetto = 102648.27;
+			if (calculated_power.value >= 31.16) {
+				priceNetto = 112801.22;
 			}
-			if (calculated_power >= 31.57) {
-				priceNetto = 104320.39;
+			if (calculated_power.value >= 31.57) {
+				priceNetto = 114606.94;
 			}
-			if (calculated_power >= 32.39) {
-				priceNetto = 106515.91;
+			if (calculated_power.value >= 32.39) {
+				priceNetto = 116936.05;
 			}
-			if (calculated_power >= 32.8) {
-				priceNetto = 107496.59;
+			if (calculated_power.value >= 32.8) {
+				priceNetto = 118050.32;
 			}
-			if (calculated_power >= 33.21) {
-				priceNetto = 109871.42;
+			if (calculated_power.value >= 33.21) {
+				priceNetto = 120558.74;
 			}
-			if (calculated_power >= 33.62) {
-				priceNetto = 110852.1;
+			if (calculated_power.value >= 33.62) {
+				priceNetto = 121673.01;
 			}
-			if (calculated_power >= 34.03) {
-				priceNetto = 112785.88;
+			if (calculated_power.value >= 34.03) {
+				priceNetto = 123740.38;
 			}
-			if (calculated_power >= 34.44) {
-				priceNetto = 113766.55;
+			if (calculated_power.value >= 34.44) {
+				priceNetto = 124854.65;
 			}
-			if (calculated_power >= 34.85) {
-				priceNetto = 115417.31;
+			if (calculated_power.value >= 34.85) {
+				priceNetto = 126638.99;
 			}
-			if (calculated_power >= 35.26) {
-				priceNetto = 116398.0;
+			if (calculated_power.value >= 35.26) {
+				priceNetto = 127753.28;
 			}
-			if (calculated_power >= 35.67) {
-				priceNetto = 117612.83;
+			if (calculated_power.value >= 35.67) {
+				priceNetto = 129101.7;
 			}
-			if (calculated_power >= 36.08) {
-				priceNetto = 118593.51;
+			if (calculated_power.value >= 36.08) {
+				priceNetto = 130215.98;
 			}
-			if (calculated_power >= 36.49) {
-				priceNetto = 120265.63;
+			if (calculated_power.value >= 36.49) {
+				priceNetto = 132021.68;
 			}
-			if (calculated_power >= 36.9) {
-				priceNetto = 121246.32;
+			if (calculated_power.value >= 36.9) {
+				priceNetto = 133135.96;
 			}
-			if (calculated_power >= 37.31) {
-				priceNetto = 122461.15;
+			if (calculated_power.value >= 37.31) {
+				priceNetto = 134484.38;
 			}
-			if (calculated_power >= 37.72) {
-				priceNetto = 123441.84;
+			if (calculated_power.value >= 37.72) {
+				priceNetto = 135598.67;
 			}
-			if (calculated_power >= 38.13) {
-				priceNetto = 125092.59;
+			if (calculated_power.value >= 38.13) {
+				priceNetto = 137383.01;
 			}
-			if (calculated_power >= 38.54) {
-				priceNetto = 126073.28;
+			if (calculated_power.value >= 38.54) {
+				priceNetto = 138497.29;
 			}
-			if (calculated_power >= 38.95) {
-				priceNetto = 127288.11;
+			if (calculated_power.value >= 38.95) {
+				priceNetto = 139845.71;
 			}
-			if (calculated_power >= 39.36) {
-				priceNetto = 128268.8;
+			if (calculated_power.value >= 39.36) {
+				priceNetto = 140959.99;
 			}
-			if (calculated_power >= 39.77) {
-				priceNetto = 130689.84;
+			if (calculated_power.value >= 39.77) {
+				priceNetto = 143514.62;
 			}
-			if (calculated_power >= 40.18) {
-				priceNetto = 131670.53;
+			if (calculated_power.value >= 40.18) {
+				priceNetto = 144628.9;
 			}
-			if (calculated_power >= 40.59) {
-				priceNetto = 132885.36;
+			if (calculated_power.value >= 40.59) {
+				priceNetto = 145977.33;
 			}
-			if (calculated_power >= 41.0) {
-				priceNetto = 133866.04;
+			if (calculated_power.value >= 41.0) {
+				priceNetto = 147091.6;
 			}
-			if (calculated_power >= 41.41) {
-				priceNetto = 135692.42;
+			if (calculated_power.value >= 41.41) {
+				priceNetto = 149051.57;
 			}
-			if (calculated_power >= 41.82) {
-				priceNetto = 137153.76;
+			if (calculated_power.value >= 41.82) {
+				priceNetto = 150646.51;
 			}
-			if (calculated_power >= 42.23) {
-				priceNetto = 139421.65;
+			if (calculated_power.value >= 42.23) {
+				priceNetto = 153047.98;
 			}
-			if (calculated_power >= 42.64) {
-				priceNetto = 140402.34;
+			if (calculated_power.value >= 42.64) {
+				priceNetto = 154162.26;
 			}
-			if (calculated_power >= 43.05) {
-				priceNetto = 142053.09;
+			if (calculated_power.value >= 43.05) {
+				priceNetto = 155946.61;
 			}
-			if (calculated_power >= 43.46) {
-				priceNetto = 143033.78;
+			if (calculated_power.value >= 43.46) {
+				priceNetto = 157060.89;
 			}
-			if (calculated_power >= 43.87) {
-				priceNetto = 144248.61;
+			if (calculated_power.value >= 43.87) {
+				priceNetto = 158409.31;
 			}
-			if (calculated_power >= 44.28) {
-				priceNetto = 145229.3;
+			if (calculated_power.value >= 44.28) {
+				priceNetto = 159523.59;
 			}
-			if (calculated_power >= 44.69) {
-				priceNetto = 146880.05;
+			if (calculated_power.value >= 44.69) {
+				priceNetto = 161307.94;
 			}
-			if (calculated_power >= 45.1) {
-				priceNetto = 147860.74;
+			if (calculated_power.value >= 45.1) {
+				priceNetto = 162422.22;
 			}
-			if (calculated_power >= 45.51) {
-				priceNetto = 149075.57;
+			if (calculated_power.value >= 45.51) {
+				priceNetto = 163770.64;
 			}
-			if (calculated_power >= 45.92) {
-				priceNetto = 150056.25;
+			if (calculated_power.value >= 45.92) {
+				priceNetto = 164884.91;
 			}
-			if (calculated_power >= 46.33) {
-				priceNetto = 151707.01;
+			if (calculated_power.value >= 46.33) {
+				priceNetto = 166669.26;
 			}
-			if (calculated_power >= 46.74) {
-				priceNetto = 153201.22;
+			if (calculated_power.value >= 46.74) {
+				priceNetto = 168297.06;
 			}
-			if (calculated_power >= 47.15) {
-				priceNetto = 154416.06;
+			if (calculated_power.value >= 47.15) {
+				priceNetto = 169645.49;
 			}
-			if (calculated_power >= 47.56) {
-				priceNetto = 155396.73;
+			if (calculated_power.value >= 47.56) {
+				priceNetto = 170759.76;
 			}
-			if (calculated_power >= 47.97) {
-				priceNetto = 157047.5;
+			if (calculated_power.value >= 47.97) {
+				priceNetto = 172544.11;
 			}
-			if (calculated_power >= 48.38) {
-				priceNetto = 158028.18;
+			if (calculated_power.value >= 48.38) {
+				priceNetto = 173658.38;
 			}
-			if (calculated_power >= 48.79) {
-				priceNetto = 159243.01;
+			if (calculated_power.value >= 48.79) {
+				priceNetto = 175006.81;
 			}
-			if (calculated_power >= 49.2) {
-				priceNetto = 160223.7;
+			if (calculated_power.value >= 49.2) {
+				priceNetto = 176121.09;
 			}
-			if (calculated_power >= 49.61) {
-				priceNetto = 161201.75;
+			if (calculated_power.value >= 49.61) {
+				priceNetto = 177232.73;
 			}
 		}
 
 		if (roofing.value == 4) {
-			if (calculated_power >= 2.05) {
-				priceNetto = 13358.22;
+			if (calculated_power.value >= 2.05) {
+				priceNetto = 14087.61;
 			}
-			if (calculated_power >= 2.46) {
-				priceNetto = 15149.28;
+			if (calculated_power.value >= 2.46) {
+				priceNetto = 16024.55;
 			}
-			if (calculated_power >= 2.87) {
-				priceNetto = 16920.25;
+			if (calculated_power.value >= 2.87) {
+				priceNetto = 17941.4;
 			}
-			if (calculated_power >= 3.28) {
-				priceNetto = 17995.05;
+			if (calculated_power.value >= 3.28) {
+				priceNetto = 19162.08;
 			}
-			if (calculated_power >= 3.69) {
-				priceNetto = 19576.05;
+			if (calculated_power.value >= 3.69) {
+				priceNetto = 20888.96;
 			}
-			if (calculated_power >= 4.1) {
-				priceNetto = 21149.04;
+			if (calculated_power.value >= 4.1) {
+				priceNetto = 22607.83;
 			}
-			if (calculated_power >= 4.51) {
-				priceNetto = 22467.51;
+			if (calculated_power.value >= 4.51) {
+				priceNetto = 24072.17;
 			}
-			if (calculated_power >= 4.92) {
-				priceNetto = 23998.43;
+			if (calculated_power.value >= 4.92) {
+				priceNetto = 25748.97;
 			}
-			if (calculated_power >= 5.33) {
-				priceNetto = 26293.79;
+			if (calculated_power.value >= 5.33) {
+				priceNetto = 28190.21;
 			}
-			if (calculated_power >= 5.74) {
-				priceNetto = 27504.46;
+			if (calculated_power.value >= 5.74) {
+				priceNetto = 29546.76;
 			}
-			if (calculated_power >= 6.15) {
-				priceNetto = 29042.17;
+			if (calculated_power.value >= 6.15) {
+				priceNetto = 31230.35;
 			}
-			if (calculated_power >= 6.56) {
-				priceNetto = 30580.38;
+			if (calculated_power.value >= 6.56) {
+				priceNetto = 32914.44;
 			}
-			if (calculated_power >= 6.97) {
-				priceNetto = 33423.61;
+			if (calculated_power.value >= 6.97) {
+				priceNetto = 35903.55;
 			}
-			if (calculated_power >= 7.38) {
-				priceNetto = 34723.74;
+			if (calculated_power.value >= 7.38) {
+				priceNetto = 37349.55;
 			}
-			if (calculated_power >= 7.79) {
-				priceNetto = 36088.79;
+			if (calculated_power.value >= 7.79) {
+				priceNetto = 38860.48;
 			}
-			if (calculated_power >= 8.2) {
-				priceNetto = 37184.51;
+			if (calculated_power.value >= 8.2) {
+				priceNetto = 40102.08;
 			}
-			if (calculated_power >= 8.61) {
-				priceNetto = 38268.71;
+			if (calculated_power.value >= 8.61) {
+				priceNetto = 41332.16;
 			}
-			if (calculated_power >= 9.02) {
-				priceNetto = 39242.67;
+			if (calculated_power.value >= 9.02) {
+				priceNetto = 42452.0;
 			}
-			if (calculated_power >= 9.43) {
-				priceNetto = 40874.33;
+			if (calculated_power.value >= 9.43) {
+				priceNetto = 44229.54;
 			}
-			if (calculated_power >= 9.84) {
-				priceNetto = 41786.96;
+			if (calculated_power.value >= 9.84) {
+				priceNetto = 45288.05;
 			}
-			if (calculated_power >= 10.25) {
-				priceNetto = 44919.06;
+			if (calculated_power.value >= 10.25) {
+				priceNetto = 48657.2;
 			}
-			if (calculated_power >= 10.66) {
-				priceNetto = 47746.33;
+			if (calculated_power.value >= 10.66) {
+				priceNetto = 51634.0;
 			}
-			if (calculated_power >= 11.07) {
-				priceNetto = 49462.74;
+			if (calculated_power.value >= 11.07) {
+				priceNetto = 53499.93;
 			}
-			if (calculated_power >= 11.48) {
-				priceNetto = 50934.32;
+			if (calculated_power.value >= 11.48) {
+				priceNetto = 55121.04;
 			}
-			if (calculated_power >= 11.89) {
-				priceNetto = 53075.97;
+			if (calculated_power.value >= 11.89) {
+				priceNetto = 57412.21;
 			}
-			if (calculated_power >= 12.3) {
-				priceNetto = 54170.4;
+			if (calculated_power.value >= 12.3) {
+				priceNetto = 58656.17;
 			}
-			if (calculated_power >= 12.71) {
-				priceNetto = 54588.58;
+			if (calculated_power.value >= 12.71) {
+				priceNetto = 59223.87;
 			}
-			if (calculated_power >= 13.12) {
-				priceNetto = 56002.39;
+			if (calculated_power.value >= 13.12) {
+				priceNetto = 60787.21;
 			}
-			if (calculated_power >= 13.53) {
-				priceNetto = 59774.74;
+			if (calculated_power.value >= 13.53) {
+				priceNetto = 64709.08;
 			}
-			if (calculated_power >= 14.28) {
-				priceNetto = 60952.91;
+			if (calculated_power.value >= 14.28) {
+				priceNetto = 66036.78;
 			}
-			if (calculated_power >= 14.35) {
-				priceNetto = 62495.12;
+			if (calculated_power.value >= 14.35) {
+				priceNetto = 67728.52;
 			}
-			if (calculated_power >= 14.76) {
-				priceNetto = 63945.67;
+			if (calculated_power.value >= 14.76) {
+				priceNetto = 69328.59;
 			}
-			if (calculated_power >= 15.17) {
-				priceNetto = 65911.23;
+			if (calculated_power.value >= 15.17) {
+				priceNetto = 71443.68;
 			}
-			if (calculated_power >= 15.58) {
-				priceNetto = 57850.35;
+			if (calculated_power.value >= 15.58) {
+				priceNetto = 63532.33;
 			}
-			if (calculated_power >= 15.99) {
-				priceNetto = 59127.91;
+			if (calculated_power.value >= 15.99) {
+				priceNetto = 64959.41;
 			}
-			if (calculated_power >= 16.4) {
-				priceNetto = 60319.89;
+			if (calculated_power.value >= 16.4) {
+				priceNetto = 66300.91;
 			}
-			if (calculated_power >= 16.81) {
-				priceNetto = 62805.16;
+			if (calculated_power.value >= 16.81) {
+				priceNetto = 68935.71;
 			}
-			if (calculated_power >= 17.22) {
-				priceNetto = 63816.94;
+			if (calculated_power.value >= 17.22) {
+				priceNetto = 70097.01;
 			}
-			if (calculated_power >= 17.63) {
-				priceNetto = 65054.5;
+			if (calculated_power.value >= 17.63) {
+				priceNetto = 71484.09;
 			}
-			if (calculated_power >= 18.04) {
-				priceNetto = 66233.89;
+			if (calculated_power.value >= 18.04) {
+				priceNetto = 72813.02;
 			}
-			if (calculated_power >= 18.45) {
-				priceNetto = 67894.8;
+			if (calculated_power.value >= 18.45) {
+				priceNetto = 74623.45;
 			}
-			if (calculated_power >= 18.86) {
-				priceNetto = 69070.0;
+			if (calculated_power.value >= 18.86) {
+				priceNetto = 75948.18;
 			}
-			if (calculated_power >= 19.27) {
-				priceNetto = 70479.36;
+			if (calculated_power.value >= 19.27) {
+				priceNetto = 77507.06;
 			}
-			if (calculated_power >= 19.68) {
-				priceNetto = 71654.57;
+			if (calculated_power.value >= 19.68) {
+				priceNetto = 78831.8;
 			}
-			if (calculated_power >= 20.09) {
-				priceNetto = 69199.13;
+			if (calculated_power.value >= 20.09) {
+				priceNetto = 76525.89;
 			}
-			if (calculated_power >= 20.5) {
-				priceNetto = 70168.36;
+			if (calculated_power.value >= 20.5) {
+				priceNetto = 77644.64;
 			}
-			if (calculated_power >= 20.91) {
-				priceNetto = 72417.23;
+			if (calculated_power.value >= 20.91) {
+				priceNetto = 80043.04;
 			}
-			if (calculated_power >= 21.32) {
-				priceNetto = 73417.63;
+			if (calculated_power.value >= 21.32) {
+				priceNetto = 81192.96;
 			}
-			if (calculated_power >= 21.73) {
-				priceNetto = 75077.43;
+			if (calculated_power.value >= 21.73) {
+				priceNetto = 83002.28;
 			}
-			if (calculated_power >= 22.14) {
-				priceNetto = 76067.16;
+			if (calculated_power.value >= 22.14) {
+				priceNetto = 84141.54;
 			}
-			if (calculated_power >= 22.55) {
-				priceNetto = 77291.03;
+			if (calculated_power.value >= 22.55) {
+				priceNetto = 85514.93;
 			}
-			if (calculated_power >= 22.96) {
-				priceNetto = 78280.75;
+			if (calculated_power.value >= 22.96) {
+				priceNetto = 86654.18;
 			}
-			if (calculated_power >= 23.37) {
-				priceNetto = 79940.54;
+			if (calculated_power.value >= 23.37) {
+				priceNetto = 88463.5;
 			}
-			if (calculated_power >= 23.78) {
-				priceNetto = 80406.05;
+			if (calculated_power.value >= 23.78) {
+				priceNetto = 89078.54;
 			}
-			if (calculated_power >= 24.19) {
-				priceNetto = 81620.89;
+			if (calculated_power.value >= 24.19) {
+				priceNetto = 90442.9;
 			}
-			if (calculated_power >= 24.6) {
-				priceNetto = 82806.98;
+			if (calculated_power.value >= 24.6) {
+				priceNetto = 91778.52;
 			}
-			if (calculated_power >= 25.01) {
-				priceNetto = 84683.08;
+			if (calculated_power.value >= 25.01) {
+				priceNetto = 93804.14;
 			}
-			if (calculated_power >= 25.42) {
-				priceNetto = 85663.76;
+			if (calculated_power.value >= 25.42) {
+				priceNetto = 94934.35;
 			}
-			if (calculated_power >= 25.83) {
-				priceNetto = 86878.59;
+			if (calculated_power.value >= 25.83) {
+				priceNetto = 96298.7;
 			}
-			if (calculated_power >= 26.24) {
-				priceNetto = 87859.28;
+			if (calculated_power.value >= 26.24) {
+				priceNetto = 97428.92;
 			}
-			if (calculated_power >= 26.65) {
-				priceNetto = 89612.74;
+			if (calculated_power.value >= 26.65) {
+				priceNetto = 99331.9;
 			}
-			if (calculated_power >= 27.06) {
-				priceNetto = 90593.43;
+			if (calculated_power.value >= 27.06) {
+				priceNetto = 100462.11;
 			}
-			if (calculated_power >= 27.47) {
-				priceNetto = 91808.26;
+			if (calculated_power.value >= 27.47) {
+				priceNetto = 101826.47;
 			}
-			if (calculated_power >= 27.88) {
-				priceNetto = 92994.36;
+			if (calculated_power.value >= 27.88) {
+				priceNetto = 103162.09;
 			}
-			if (calculated_power >= 28.29) {
-				priceNetto = 94645.11;
+			if (calculated_power.value >= 28.29) {
+				priceNetto = 104962.37;
 			}
-			if (calculated_power >= 28.7) {
-				priceNetto = 95625.8;
+			if (calculated_power.value >= 28.7) {
+				priceNetto = 106092.59;
 			}
-			if (calculated_power >= 29.11) {
-				priceNetto = 96840.63;
+			if (calculated_power.value >= 29.11) {
+				priceNetto = 107456.94;
 			}
-			if (calculated_power >= 29.52) {
-				priceNetto = 97821.32;
+			if (calculated_power.value >= 29.52) {
+				priceNetto = 108587.16;
 			}
-			if (calculated_power >= 29.93) {
-				priceNetto = 99472.07;
+			if (calculated_power.value >= 29.93) {
+				priceNetto = 110387.43;
 			}
-			if (calculated_power >= 30.34) {
-				priceNetto = 100452.76;
+			if (calculated_power.value >= 30.34) {
+				priceNetto = 111517.65;
 			}
-			if (calculated_power >= 30.75) {
-				priceNetto = 101667.59;
+			if (calculated_power.value >= 30.75) {
+				priceNetto = 112882.0;
 			}
-			if (calculated_power >= 31.16) {
-				priceNetto = 102648.27;
+			if (calculated_power.value >= 31.16) {
+				priceNetto = 114012.21;
 			}
-			if (calculated_power >= 31.57) {
-				priceNetto = 104320.39;
+			if (calculated_power.value >= 31.57) {
+				priceNetto = 115833.86;
 			}
-			if (calculated_power >= 32.39) {
-				priceNetto = 106515.91;
+			if (calculated_power.value >= 32.39) {
+				priceNetto = 118178.9;
 			}
-			if (calculated_power >= 32.8) {
-				priceNetto = 107496.59;
+			if (calculated_power.value >= 32.8) {
+				priceNetto = 119309.11;
 			}
-			if (calculated_power >= 33.21) {
-				priceNetto = 109871.42;
+			if (calculated_power.value >= 33.21) {
+				priceNetto = 121833.47;
 			}
-			if (calculated_power >= 33.62) {
-				priceNetto = 110852.1;
+			if (calculated_power.value >= 33.62) {
+				priceNetto = 122963.67;
 			}
-			if (calculated_power >= 34.03) {
-				priceNetto = 112785.88;
+			if (calculated_power.value >= 34.03) {
+				priceNetto = 125046.97;
 			}
-			if (calculated_power >= 34.44) {
-				priceNetto = 113766.55;
+			if (calculated_power.value >= 34.44) {
+				priceNetto = 126177.18;
 			}
-			if (calculated_power >= 34.85) {
-				priceNetto = 115417.31;
+			if (calculated_power.value >= 34.85) {
+				priceNetto = 127977.45;
 			}
-			if (calculated_power >= 35.26) {
-				priceNetto = 116398.0;
+			if (calculated_power.value >= 35.26) {
+				priceNetto = 129107.67;
 			}
-			if (calculated_power >= 35.67) {
-				priceNetto = 117612.83;
+			if (calculated_power.value >= 35.67) {
+				priceNetto = 130472.02;
 			}
-			if (calculated_power >= 36.08) {
-				priceNetto = 118593.51;
+			if (calculated_power.value >= 36.08) {
+				priceNetto = 131602.24;
 			}
-			if (calculated_power >= 36.49) {
-				priceNetto = 120265.63;
+			if (calculated_power.value >= 36.49) {
+				priceNetto = 133423.88;
 			}
-			if (calculated_power >= 36.9) {
-				priceNetto = 121246.32;
+			if (calculated_power.value >= 36.9) {
+				priceNetto = 134554.09;
 			}
-			if (calculated_power >= 37.31) {
-				priceNetto = 122461.15;
+			if (calculated_power.value >= 37.31) {
+				priceNetto = 135918.45;
 			}
-			if (calculated_power >= 37.72) {
-				priceNetto = 123441.84;
+			if (calculated_power.value >= 37.72) {
+				priceNetto = 137048.66;
 			}
-			if (calculated_power >= 38.13) {
-				priceNetto = 125092.59;
+			if (calculated_power.value >= 38.13) {
+				priceNetto = 138848.94;
 			}
-			if (calculated_power >= 38.54) {
-				priceNetto = 126073.28;
+			if (calculated_power.value >= 38.54) {
+				priceNetto = 139979.16;
 			}
-			if (calculated_power >= 38.95) {
-				priceNetto = 127288.11;
+			if (calculated_power.value >= 38.95) {
+				priceNetto = 141343.51;
 			}
-			if (calculated_power >= 39.36) {
-				priceNetto = 128268.8;
+			if (calculated_power.value >= 39.36) {
+				priceNetto = 142473.73;
 			}
-			if (calculated_power >= 39.77) {
-				priceNetto = 130689.84;
+			if (calculated_power.value >= 39.77) {
+				priceNetto = 145044.29;
 			}
-			if (calculated_power >= 40.18) {
-				priceNetto = 131670.53;
+			if (calculated_power.value >= 40.18) {
+				priceNetto = 146174.51;
 			}
-			if (calculated_power >= 40.59) {
-				priceNetto = 132885.36;
+			if (calculated_power.value >= 40.59) {
+				priceNetto = 147538.86;
 			}
-			if (calculated_power >= 41.0) {
-				priceNetto = 133866.04;
+			if (calculated_power.value >= 41.0) {
+				priceNetto = 148669.07;
 			}
-			if (calculated_power >= 41.41) {
-				priceNetto = 135692.42;
+			if (calculated_power.value >= 41.41) {
+				priceNetto = 150644.98;
 			}
-			if (calculated_power >= 41.82) {
-				priceNetto = 137153.76;
+			if (calculated_power.value >= 41.82) {
+				priceNetto = 152255.85;
 			}
-			if (calculated_power >= 42.23) {
-				priceNetto = 139421.65;
+			if (calculated_power.value >= 42.23) {
+				priceNetto = 154673.26;
 			}
-			if (calculated_power >= 42.64) {
-				priceNetto = 140402.34;
+			if (calculated_power.value >= 42.64) {
+				priceNetto = 155803.47;
 			}
-			if (calculated_power >= 43.05) {
-				priceNetto = 142053.09;
+			if (calculated_power.value >= 43.05) {
+				priceNetto = 157603.75;
 			}
-			if (calculated_power >= 43.46) {
-				priceNetto = 143033.78;
+			if (calculated_power.value >= 43.46) {
+				priceNetto = 158733.96;
 			}
-			if (calculated_power >= 43.87) {
-				priceNetto = 144248.61;
+			if (calculated_power.value >= 43.87) {
+				priceNetto = 160098.32;
 			}
-			if (calculated_power >= 44.28) {
-				priceNetto = 145229.3;
+			if (calculated_power.value >= 44.28) {
+				priceNetto = 161228.53;
 			}
-			if (calculated_power >= 44.69) {
-				priceNetto = 146880.05;
+			if (calculated_power.value >= 44.69) {
+				priceNetto = 163028.81;
 			}
-			if (calculated_power >= 45.1) {
-				priceNetto = 147860.74;
+			if (calculated_power.value >= 45.1) {
+				priceNetto = 164159.03;
 			}
-			if (calculated_power >= 45.51) {
-				priceNetto = 149075.57;
+			if (calculated_power.value >= 45.51) {
+				priceNetto = 165523.38;
 			}
-			if (calculated_power >= 45.92) {
-				priceNetto = 150056.25;
+			if (calculated_power.value >= 45.92) {
+				priceNetto = 166653.59;
 			}
-			if (calculated_power >= 46.33) {
-				priceNetto = 151707.01;
+			if (calculated_power.value >= 46.33) {
+				priceNetto = 168453.87;
 			}
-			if (calculated_power >= 46.74) {
-				priceNetto = 153201.22;
+			if (calculated_power.value >= 46.74) {
+				priceNetto = 170097.6;
 			}
-			if (calculated_power >= 47.15) {
-				priceNetto = 154416.06;
+			if (calculated_power.value >= 47.15) {
+				priceNetto = 171461.97;
 			}
-			if (calculated_power >= 47.56) {
-				priceNetto = 155396.73;
+			if (calculated_power.value >= 47.56) {
+				priceNetto = 172592.17;
 			}
-			if (calculated_power >= 47.97) {
-				priceNetto = 157047.5;
+			if (calculated_power.value >= 47.97) {
+				priceNetto = 174392.46;
 			}
-			if (calculated_power >= 48.38) {
-				priceNetto = 158028.18;
+			if (calculated_power.value >= 48.38) {
+				priceNetto = 175522.67;
 			}
-			if (calculated_power >= 48.79) {
-				priceNetto = 159243.01;
+			if (calculated_power.value >= 48.79) {
+				priceNetto = 176887.02;
 			}
-			if (calculated_power >= 49.2) {
-				priceNetto = 160223.7;
+			if (calculated_power.value >= 49.2) {
+				priceNetto = 178017.24;
 			}
-			if (calculated_power >= 49.61) {
-				priceNetto = 161201.75;
+			if (calculated_power.value >= 49.61) {
+				priceNetto = 179144.82;
 			}
 		}
 	}

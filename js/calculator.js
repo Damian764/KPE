@@ -290,8 +290,8 @@ const calculatePrice = (el) => {
 	} else {
 		document.getElementById('no-client-info').classList.remove('active');
 	}
-	if (document.getElementById('trina-solar-420W').selected == true) {
-		calculated_price = parseFloat(calculated_price) + parseFloat(number_of_panels.value) * 40;
+	if (document.getElementById('trina-solar-420W').selected == true || document.getElementById('trina-solar-455W').selected == true || document.getElementById('trina-solar-460W').selected == true) {
+		calculated_price = parseFloat(calculated_price) + parseFloat(number_of_panels.value) * 80;
 	}
 	updatePrice(el);
 };
@@ -304,8 +304,8 @@ const updatePrice = (el) => {
 		custom_cost += 1500;
 	}
 	suggested_price = parseFloat(suggested_price) + parseFloat(add_cost) + parseFloat(cable_price) + parseFloat(trench_price) + parseFloat(lift_price) + parseFloat(inverter_type.value) + parseFloat(large_inverter.value) + parseFloat(custom_cost) + parseFloat(newPriceIncrease);
-	if (document.getElementById('trina-solar-420W').selected == true) {
-		suggested_price = parseFloat(suggested_price) + parseFloat(number_of_panels.value) * 60;
+	if (document.getElementById('trina-solar-420W').selected == true || document.getElementById('trina-solar-455W').selected == true || document.getElementById('trina-solar-460W').selected == true) {
+		suggested_price = parseFloat(suggested_price) + parseFloat(number_of_panels.value) * 100;
 	}
 	if (place_of_installation__ground.selected == true || (place_of_installation__flat_roof.selected == true && document.getElementById('balast').selected == true)) {
 		suggested_price += Math.ceil(calculated_power.value / 10) * 2000;
