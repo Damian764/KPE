@@ -72,42 +72,6 @@ const main = (el) => {
 	document.getElementById('panel_manufacturer').innerText = panel_type.options[panel_type.selectedIndex].getAttribute('data-name');
 	document.getElementById('moc-modulu').innerText = panel_type.value;
 };
-place_of_installation.addEventListener('change', () => {
-	if (place_of_installation__pitched_roof.selected == true) {
-		roofing.value = 1;
-		document.getElementById('btb').style.display = 'block';
-		document.getElementById('dachowka').style.display = 'block';
-		document.getElementById('ekierka').style.display = 'none';
-		document.getElementById('balast').style.display = 'none';
-		document.getElementById('grunt').style.display = 'none';
-	}
-	if (place_of_installation__flat_roof.selected == true) {
-		roofing.value = 3;
-		document.getElementById('btb').style.display = 'none';
-		document.getElementById('dachowka').style.display = 'none';
-		document.getElementById('ekierka').style.display = 'block';
-		document.getElementById('balast').style.display = 'block';
-		document.getElementById('grunt').style.display = 'none';
-	}
-	if (place_of_installation__ground.selected == true) {
-		roofing.value = 4;
-		document.getElementById('btb').style.display = 'none';
-		document.getElementById('dachowka').style.display = 'none';
-		document.getElementById('ekierka').style.display = 'none';
-		document.getElementById('balast').style.display = 'none';
-		document.getElementById('grunt').style.display = 'block';
-		document.getElementById('trina-solar').disabled = true;
-		// 		document.getElementById('trina-solar2').disabled = true;
-		document.getElementById('sun-link').disabled = true;
-		document.getElementById('trina-solar3').disabled = false;
-		document.getElementById('trina-solar3').selected = true;
-	} else {
-		document.getElementById('trina-solar').disabled = false;
-		// 		document.getElementById('trina-solar2').disabled = false;
-		document.getElementById('sun-link').disabled = false;
-		document.getElementById('trina-solar3').disabled = true;
-	}
-});
 
 const calculatePower = () => {
 	if (proposed_power.value < 2) {
@@ -126,12 +90,126 @@ const updatePower = () => {
 	const power = number_of_panels.value * panel_type.value;
 	calculated_power.value = parseFloat(power / 1000);
 
-	if (calculated_power.value > 2.25 && calculated_power.value < 3.75) {
+	if (calculated_power.value >= 2 && calculated_power.value < 3.75) {
 		document.getElementById('have_pv_installation_container').style.display = 'grid';
 		document.getElementById('have_pv_installation').disabled = false;
 	} else {
 		document.getElementById('have_pv_installation_container').style.display = 'none';
 		document.getElementById('have_pv_installation').disabled = true;
+	}
+	const btb = document.getElementById('btb');
+	const dachowka = document.getElementById('dachowka');
+	const ekierka = document.getElementById('ekierka');
+	const balast = document.getElementById('balast');
+	const grunt = document.getElementById('grunt');
+	const sunLink410W = document.getElementById('sun-link-410W');
+	const trinaSolar420W = document.getElementById('trina-solar-420W');
+	const sunLink455W = document.getElementById('sun-link-455W');
+	const trinaSolar455W = document.getElementById('trina-solar-455W');
+	const trinaSolar460W = document.getElementById('trina-solar-460W');
+	if (place_of_installation__pitched_roof.selected == true) {
+		if (roofing.value == 2 || roofing.value == 3 || roofing.value == 4) {
+			roofing.value = 1;
+		}
+		btb.style.display = 'block';
+		dachowka.style.display = 'block';
+		ekierka.style.display = 'none';
+		balast.style.display = 'none';
+		grunt.style.display = 'none';
+
+		if (calculated_power.value < 10) {
+			sunLink410W.disabled = false;
+			sunLink410W.style.display = 'block';
+			trinaSolar420W.disabled = false;
+			trinaSolar420W.style.display = 'block';
+			sunLink455W.disabled = true;
+			sunLink455W.style.display = 'none';
+			if (sunLink455W.selected == true) {
+				sunLink455W.selected = false;
+				sunLink410W.selected = true;
+			}
+			trinaSolar455W.disabled = true;
+			trinaSolar455W.style.display = 'none';
+
+			if (trinaSolar455W.selected == true) {
+				trinaSolar455W.selected = false;
+				sunLink410W.selected = true;
+			}
+			trinaSolar460W.disabled = true;
+			trinaSolar460W.style.display = 'none';
+
+			if (trinaSolar460W.selected == true) {
+				trinaSolar460W.selected = false;
+				sunLink410W.selected = true;
+			}
+		}
+		if (calculated_power.value >= 10) {
+			sunLink455W.disabled = false;
+			sunLink455W.style.display = 'block';
+			trinaSolar455W.disabled = false;
+			trinaSolar455W.style.display = 'block';
+			trinaSolar460W.disabled = false;
+			trinaSolar460W.style.display = 'block';
+			sunLink410W.selected = true;
+			sunLink410W.style.display = 'none';
+			if (sunLink410W.selected == true) {
+				sunLink410W.selected = false;
+				sunLink455W.selected = true;
+			}
+			trinaSolar420W.disabled = true;
+			trinaSolar420W.style.display = 'none';
+			if (trinaSolar420W.selected == true) {
+				trinaSolar420W.selected = true;
+				sunLink455W.selected = true;
+			}
+		}
+	}
+	if (place_of_installation__flat_roof.selected == true) {
+		if (roofing.value == 0 || roofing.value == 1 || roofing.value == 4) {
+			roofing.value = 3;
+		}
+		btb.style.display = 'none';
+		dachowka.style.display = 'none';
+		ekierka.style.display = 'block';
+		balast.style.display = 'block';
+		grunt.style.display = 'none';
+	}
+	if (place_of_installation__ground.selected == true) {
+		roofing.value = 4;
+		btb.style.display = 'none';
+		dachowka.style.display = 'none';
+		ekierka.style.display = 'none';
+		balast.style.display = 'none';
+		grunt.style.display = 'block';
+		// 		document.getElementById('trina-solar-395W').disabled = true;
+		sunLink455W.disabled = false;
+		sunLink455W.style.display = 'block';
+		sunLink410W.disabled = true;
+		sunLink410W.style.display = 'none';
+		if (sunLink410W.selected == true) {
+			sunLink455W.selected = true;
+		}
+		trinaSolar420W.disabled = true;
+		trinaSolar420W.style.display = 'none';
+		if (trinaSolar420W.selected == true) {
+			sunLink455W.selected = true;
+		}
+		trinaSolar455W.disabled = true;
+		trinaSolar455W.style.display = 'none';
+		if (trinaSolar455W.selected == true && calculated_power.value < 10) {
+			sunLink455W.selected = true;
+		}
+		trinaSolar460W.disabled = true;
+		trinaSolar460W.style.display = 'none';
+		if (trinaSolar460W.selected == true && calculated_power.value < 10) {
+			sunLink455W.selected = true;
+		}
+		if (calculated_power.value >= 10) {
+			trinaSolar455W.disabled = false;
+			trinaSolar455W.style.display = 'block';
+			trinaSolar460W.disabled = false;
+			trinaSolar460W.style.display = 'block';
+		}
 	}
 	document.getElementById('moc-instalacji').innerText = parseFloat(power / 1000).toFixed(2);
 	document.getElementById('energy-given').value = parseFloat(((100 - document.getElementById('autoconsumption').value) / 100) * calculated_power.value).toFixed(2) * 1000;
@@ -195,19 +273,24 @@ const calculatePrice = (el) => {
 	}
 	calculated_price = parseFloat(calculated_price) + parseFloat(cable_price) + parseFloat(add_cost) + parseFloat(trench_price) + parseFloat(lift_price) + parseFloat(inverter_type.value) + parseFloat(large_inverter.value) + parseFloat(custom_cost) + parseFloat(newPriceIncrease);
 	if (number_of_panels.value % 2 != 0 && place_of_installation__ground.selected == true) {
-		alert('Instalacja na gruncie musi mieć parzystą ilość paneli');
+		document.getElementById('uneven-ground').classList.add('active');
 		calculated_price = 0;
+	} else {
+		document.getElementById('uneven-ground').classList.remove('active');
 	}
-
 	if (place_of_installation__ground.selected == true && cable_length.value == '') {
-		alert('Podaj długość przewodu, aby obliczyć cenę!');
+		document.getElementById('no-cable-length').classList.add('active');
 		calculated_price = 0;
+	} else {
+		document.getElementById('no-cable-length').classList.remove('active');
 	}
 	if (document.getElementById('client-name').value == '') {
-		alert('Podaj dane klienta');
+		document.getElementById('no-client-info').classList.add('active');
 		calculated_price = 0;
+	} else {
+		document.getElementById('no-client-info').classList.remove('active');
 	}
-	if (document.getElementById('trina-solar').selected == true) {
+	if (document.getElementById('trina-solar-420W').selected == true) {
 		calculated_price = parseFloat(calculated_price) + parseFloat(number_of_panels.value) * 40;
 	}
 	updatePrice(el);
@@ -221,7 +304,7 @@ const updatePrice = (el) => {
 		custom_cost += 1500;
 	}
 	suggested_price = parseFloat(suggested_price) + parseFloat(add_cost) + parseFloat(cable_price) + parseFloat(trench_price) + parseFloat(lift_price) + parseFloat(inverter_type.value) + parseFloat(large_inverter.value) + parseFloat(custom_cost) + parseFloat(newPriceIncrease);
-	if (document.getElementById('trina-solar').selected == true) {
+	if (document.getElementById('trina-solar-420W').selected == true) {
 		suggested_price = parseFloat(suggested_price) + parseFloat(number_of_panels.value) * 60;
 	}
 	if (place_of_installation__ground.selected == true || (place_of_installation__flat_roof.selected == true && document.getElementById('balast').selected == true)) {

@@ -796,7 +796,24 @@ select:disabled {
 .table .tbody > .tr:last-of-type .td:last-of-type {
 	border-bottom-right-radius: 5px;
 }
-
+.errors {
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    grid-gap: 10px;
+    padding-block: 5px;
+}
+.error {
+    display: none;
+    background: #ff7676;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    color:#570101;
+    font-weight: bold;
+}
+.error.active {
+    display: block;
+}
 .save-container {
 	padding: 20px;
 	margin: 20px 0;

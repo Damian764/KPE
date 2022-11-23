@@ -86,6 +86,11 @@
 			</div>
 			<div class="content">
 				<div id="calculator-section" class="active">
+					<div class="errors">
+						<div id="uneven-ground" class="error">Instalacja na gruncie musi mieć parzystą ilość paneli</div>
+						<div id="no-cable-length" class="error">Podaj długość przewodu, aby obliczyć cenę!</div>
+						<div id="no-client-info" class="error">Podaj dane klienta</div>
+					</div>
 					<div class="calculator-grid">
 						<div class="client-section-info">
 							<div class="input-group blue">
@@ -106,7 +111,7 @@
 							</div>
 							<div class="input-group green">
 								<div class="input-prefix"><span>Prop. moc instalacji</span></div>
-								<input type="number" min="2.2" step="0.1" value="3.45" id="proposed_power" class="user-input" />
+								<input type="number" min="2" step="0.1" value="3.45" id="proposed_power" class="user-input" />
 								<div class="input-suffix"><span>kWp</span></div>
 							</div>
 							<div class="input-group">
@@ -145,17 +150,20 @@
 								<select id="panel_type" class="user-input">
 									<!-- <option value="345" data-name="SunLink" selected>345Wp SunLink</option> -->
 									<!--<option value="380" data-name="SunLink">380Wp SunLink</option>-->
-									<!-- <option value="395" data-name="Trina Solar" id="trina-solar2">395Wp Trina Solar</option> -->
-									<option value="420" data-name="Trina Solar" id="trina-solar">420Wp Trina Solar</option>
-									<option value="410" data-name="SunLink" id="sun-link">410Wp SunLink</option>
-									<option value="455" data-name="SunLink" id="trina-solar3" disabled>455Wp SunLink</option>
+									<!-- <option value="395" data-name="Trina Solar" id="trina-solar-395W">395Wp Trina Solar</option> -->
+									<option value="410" data-name="SunLink" id="sun-link-410W">410Wp SunLink</option>
+									<option value="420" data-name="Trina Solar" id="trina-solar-420W">420Wp Trina Solar</option>
+									<option value="455" data-name="Trina Solar" id="trina-solar-455W">455Wp Trina Solar</option>
+									<option value="455" data-name="SunLink" id="sun-link-455W" disabled>455Wp SunLink</option>
+									<option value="460" data-name="Trina Solar" id="trina-solar-460W">460Wp Trina Solar</option>
 								</select>
 							</div>
 							<div class="input-group">
 								<div class="input-prefix"><span>Falownik</span></div>
 								<select id="inverter_type" class="user-input">
 									<option value="0">Hypontech</option>
-									<option value="1500">Sofar solar</option>
+									<option value="500">Sofar solar</option>
+									<option value="0" id="hoymiles-inwerter">Hoymiles</option>
 								</select>
 							</div>
 							<div class="input-group">
@@ -259,13 +267,14 @@
 						</div>
 						<div class="input-group" style="margin-top: 5px">
 							<div class="input-prefix"><span>Mój prąd</span></div>
-							<input type="number" id="moj-prad" class="user-input" min="0" value="4000" />
+							<input type="number" id="moj-prad" class="user-input" min="0" value="6000" />
 							<div class="input-suffix"><span>zł</span></div>
 						</div>
 						<div class="input-group odliczenie" style="margin-top: 5px">
 							<div class="input-prefix"><span>Odliczenie podatku</span></div>
 							<select id="tax-select" class="user-input-no-update">
 								<option value="0">0%</option>
+								<option value="0.12">12%</option>
 								<option value="0.17" selected>17%</option>
 								<option value="0.19">19%</option>
 								<option value="0.25">25%</option>
@@ -789,7 +798,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="fixed bottom-right version-info pill-shaped" id="version">v4.3.1.0</div>
+		<div class="fixed bottom-right version-info pill-shaped" id="version">v5.0.0.0</div>
 		<script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
 		<script src="../js/cookies.js?ver=141122"></script>
 		<script src="../js/logout.js?ver=141122"></script>
