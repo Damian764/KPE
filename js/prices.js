@@ -2751,14 +2751,14 @@ const nettoCalculation = () => {
 	if (document.getElementById('hoymiles-inwerter').selected == false) {
 		if (calculated_power.value <= 11.25) {
 			if (office_level.value == 'ZL') {
-				priceNetto = priceNetto + Math.ceil(calculated_power.value) * 100;
+				priceNetto = priceNetto + Math.ceil(calculated_power.value) * 200;
 			}
 			if (office_level.value == 'SR') {
-				priceNetto = priceNetto + Math.ceil(calculated_power.value) * 200;
+				priceNetto = priceNetto + Math.ceil(calculated_power.value) * 300;
 			}
 
 			if (office_level.value == 'BR') {
-				priceNetto = priceNetto + Math.ceil(calculated_power.value) * 300;
+				priceNetto = priceNetto + Math.ceil(calculated_power.value) * 400;
 			}
 		}
 		if (vat_value.value == 0.08) {
