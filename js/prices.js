@@ -3046,17 +3046,15 @@ const suggestPrice = () => {
 		}
 	}
 
-	if (calculated_power.value <= 11.25) {
-		if (office_level.value == 'ZL') {
-			zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 200;
-		}
-		if (office_level.value == 'SR') {
-			zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 400;
-		}
+	if (office_level.value == 'ZL') {
+		zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 200;
+	}
+	if (office_level.value == 'SR') {
+		zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 300;
+	}
 
-		if (office_level.value == 'BR') {
-			zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 600;
-		}
+	if (office_level.value == 'BR') {
+		zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 400;
 	}
 	return zero_price_calc * 1.05;
 };
