@@ -263,19 +263,18 @@ const updatePower = (el) => {
 				return;
 			}
 		} else {
-			if (calculated_power < 10) {
-				sunLink410W.disabled = false;
-				sunLink410W.style.display = 'block';
-				if (trinaSolar455W.selected == true) {
-					trinaSolar420W.selected = true;
-					setTimeout(() => {
-						main(el);
-					}, 0);
-					return;
-				}
+			if (calculated_power.value < 11) {
 				sunLink455W.disabled = true;
 				sunLink455W.style.display = 'none';
-				if (sunLink455W.selected == true) {
+				trinaSolar455W.disabled = true;
+				trinaSolar455W.style.display = 'none';
+				trinaSolar460W.disabled = true;
+				trinaSolar460W.style.display = 'none';
+				sunLink410W.disabled = false;
+				sunLink410W.style.display = 'block';
+				trinaSolar420W.disabled = false;
+				trinaSolar420W.style.display = 'block';
+				if (trinaSolar455W.selected == true || trinaSolar460W.selected == true || sunLink455W.selected == true) {
 					trinaSolar420W.selected = true;
 					setTimeout(() => {
 						main(el);
@@ -283,7 +282,7 @@ const updatePower = (el) => {
 					return;
 				}
 			}
-			if (calculated_power.value > 10) {
+			if (calculated_power.value >= 11) {
 				sunLink410W.disabled = true;
 				sunLink410W.style.display = 'none';
 				trinaSolar420W.disabled = true;
@@ -304,7 +303,7 @@ const updatePower = (el) => {
 			}
 		}
 	}
-	if (document.getElementById('hoymiles-inwerter').selected == true && calculated_power.value < 10 && place_of_installation__ground.selected == true) {
+	if (document.getElementById('hoymiles-inwerter').selected == true && calculated_power.value < 10 && place_of_installation__ground.selected == false) {
 		sunLink410W.disabled = false;
 		sunLink410W.style.display = 'block';
 		trinaSolar420W.disabled = false;
