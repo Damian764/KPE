@@ -2428,6 +2428,9 @@ const nettoCalculation = () => {
 			if (calculated_power.value >= 9.84) {
 				priceNetto = 46332.72;
 			}
+			if (calculated_power.value >= 10.25) {
+				priceNetto = 49780.17;
+			}
 			if (calculated_power.value >= 10.66) {
 				priceNetto = 52827.66;
 			}
