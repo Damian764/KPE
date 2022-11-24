@@ -2748,16 +2748,24 @@ const nettoCalculation = () => {
 			}
 		}
 	}
-	if (document.getElementById('hoymiles-inwerter').selected == false) {
-		if (office_level.value == 'ZL') {
-			priceNetto = priceNetto + Math.ceil(calculated_power.value) * 200;
-		}
+	if (calculated_power.value <= 11.25) {
 		if (office_level.value == 'SR') {
-			priceNetto = priceNetto + Math.ceil(calculated_power.value) * 300;
+			priceNetto = priceNetto + Math.ceil(calculated_power.value) * 100;
 		}
 
 		if (office_level.value == 'BR') {
-			priceNetto = priceNetto + Math.ceil(calculated_power.value) * 400;
+			priceNetto = priceNetto + Math.ceil(calculated_power.value) * 200;
+		}
+	}
+	if (document.getElementById('hoymiles-inwerter').selected == false) {
+		if (office_level.value == 'ZL') {
+			priceNetto = priceNetto + Math.ceil(calculated_power.value) * 100;
+		}
+		if (office_level.value == 'SR') {
+			priceNetto = priceNetto + Math.ceil(calculated_power.value) * 200;
+		}
+		if (office_level.value == 'BR') {
+			priceNetto = priceNetto + Math.ceil(calculated_power.value) * 300;
 		}
 		if (vat_value.value == 0.08) {
 			priceNetto = priceNetto + 139;
@@ -3046,15 +3054,27 @@ const suggestPrice = () => {
 		}
 	}
 
-	if (office_level.value == 'ZL') {
-		zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 200;
-	}
-	if (office_level.value == 'SR') {
-		zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 300;
+	if (calculated_power.value <= 11.25) {
+		if (office_level.value == 'SR') {
+			zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 100;
+		}
+
+		if (office_level.value == 'BR') {
+			zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 200;
+		}
 	}
 
-	if (office_level.value == 'BR') {
-		zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 400;
+	if (document.getElementById('hoymiles-inwerter').selected == false) {
+		if (office_level.value == 'ZL') {
+			zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 200;
+		}
+		if (office_level.value == 'SR') {
+			zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 300;
+		}
+
+		if (office_level.value == 'BR') {
+			zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 400;
+		}
 	}
 	return zero_price_calc * 1.05;
 };
