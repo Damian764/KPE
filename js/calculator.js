@@ -237,10 +237,13 @@ const updatePower = (el) => {
 		ekierka.style.display = 'none';
 		balast.style.display = 'none';
 		grunt.style.display = 'block';
-		// 		document.getElementById('trina-solar-395W').disabled = true;
-		sunLink455W.disabled = false;
-		sunLink455W.style.display = 'block';
 		if (document.getElementById('hoymiles-inwerter').selected == false) {
+			sunLink455W.disabled = false;
+			sunLink455W.style.display = 'block';
+			trinaSolar455W.disabled = false;
+			trinaSolar455W.style.display = 'block';
+			trinaSolar460W.disabled = false;
+			trinaSolar460W.style.display = 'block';
 			sunLink410W.disabled = true;
 			sunLink410W.style.display = 'none';
 			if (sunLink410W.selected == true) {
@@ -260,31 +263,48 @@ const updatePower = (el) => {
 				return;
 			}
 		} else {
-			sunLink410W.disabled = false;
-			sunLink410W.style.display = 'block';
-			if (trinaSolar455W.selected == true) {
-				trinaSolar420W.selected = true;
-				setTimeout(() => {
-					main(el);
-				}, 0);
-				return;
+			if (calculated_power < 10) {
+				sunLink410W.disabled = false;
+				sunLink410W.style.display = 'block';
+				if (trinaSolar455W.selected == true) {
+					trinaSolar420W.selected = true;
+					setTimeout(() => {
+						main(el);
+					}, 0);
+					return;
+				}
+				sunLink455W.disabled = true;
+				sunLink455W.style.display = 'none';
+				if (sunLink455W.selected == true) {
+					trinaSolar420W.selected = true;
+					setTimeout(() => {
+						main(el);
+					}, 0);
+					return;
+				}
 			}
-			sunLink455W.disabled = true;
-			sunLink455W.style.display = 'none';
-			if (sunLink455W.selected == true) {
-				trinaSolar420W.selected = true;
-				setTimeout(() => {
-					main(el);
-				}, 0);
-				return;
+			if (calculated_power.value > 10) {
+				sunLink410W.disabled = true;
+				sunLink410W.style.display = 'none';
+				trinaSolar420W.disabled = true;
+				trinaSolar420W.style.display = 'none';
+				sunLink455W.disabled = false;
+				sunLink455W.style.display = 'block';
+				trinaSolar455W.disabled = false;
+				trinaSolar455W.style.display = 'block';
+				trinaSolar460W.disabled = false;
+				trinaSolar460W.style.display = 'block';
+				if (sunLink410W.selected == true || trinaSolar420W.selected == true) {
+					sunLink455W.selected = true;
+					setTimeout(() => {
+						main(el);
+					}, 0);
+					return;
+				}
 			}
 		}
-		trinaSolar455W.disabled = false;
-		trinaSolar455W.style.display = 'block';
-		trinaSolar460W.disabled = false;
-		trinaSolar460W.style.display = 'block';
 	}
-	if (document.getElementById('hoymiles-inwerter').selected == true) {
+	if (document.getElementById('hoymiles-inwerter').selected == true && calculated_power.value < 10 && place_of_installation__ground.selected == true) {
 		sunLink410W.disabled = false;
 		sunLink410W.style.display = 'block';
 		trinaSolar420W.disabled = false;
@@ -465,6 +485,10 @@ const calculateCredit = (el) => {
 	if (document.getElementById('repayment_period').value > 96 && document.getElementById('tf-bank').selected) {
 		document.getElementById('interest').value = document.getElementById('in-bank').value;
 	}
+
+	if (document.getElementById('repayment_period').value > 84 && document.getElementById('santander-bank').selected) {
+		document.getElementById('repayment_period').value = 84;
+	}
 	if (document.getElementById('repayment_period').value > 120) {
 		document.getElementById('interest').value = document.getElementById('in-bank').value;
 		document.getElementById('in-bank').value = 0.652;
@@ -486,6 +510,11 @@ const calculateCredit = (el) => {
 	} else if (document.getElementById('interest').value == document.getElementById('tf-bank').value) {
 		document.getElementById('logo-bank').src = '../img/TF-Bank-logo.png';
 		document.getElementById('repayment_period').max = 96;
+		document.getElementById('deferment').value = 'Nie';
+		document.getElementById('deferment').disabled = true;
+	} else if (document.getElementById('interest').value == document.getElementById('santander-bank').value) {
+		document.getElementById('logo-bank').src = '../img/Santander_Logo.png';
+		document.getElementById('repayment_period').max = 84;
 		document.getElementById('deferment').value = 'Nie';
 		document.getElementById('deferment').disabled = true;
 	}

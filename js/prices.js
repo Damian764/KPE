@@ -2398,68 +2398,35 @@ const nettoCalculation = () => {
 		}
 
 		if (roofing.value == 4) {
-			if (calculated_power.value >= 2.05) {
-				priceNetto = 14421.57;
-			}
 			if (calculated_power.value >= 2.46) {
 				priceNetto = 16403.28;
-			}
-			if (calculated_power.value >= 2.87) {
-				priceNetto = 18364.41;
 			}
 			if (calculated_power.value >= 3.28) {
 				priceNetto = 19611.96;
 			}
-			if (calculated_power.value >= 3.69) {
-				priceNetto = 21378.36;
-			}
 			if (calculated_power.value >= 4.1) {
 				priceNetto = 23136.55;
-			}
-			if (calculated_power.value >= 4.51) {
-				priceNetto = 24633.86;
 			}
 			if (calculated_power.value >= 4.92) {
 				priceNetto = 26348.93;
 			}
-			if (calculated_power.value >= 5.33) {
-				priceNetto = 28847.56;
-			}
 			if (calculated_power.value >= 5.74) {
 				priceNetto = 30234.37;
-			}
-			if (calculated_power.value >= 6.15) {
-				priceNetto = 31956.4;
 			}
 			if (calculated_power.value >= 6.56) {
 				priceNetto = 33678.95;
 			}
-			if (calculated_power.value >= 6.97) {
-				priceNetto = 36739.14;
-			}
 			if (calculated_power.value >= 7.38) {
 				priceNetto = 38217.65;
-			}
-			if (calculated_power.value >= 7.79) {
-				priceNetto = 39762.7;
 			}
 			if (calculated_power.value >= 8.2) {
 				priceNetto = 41031.69;
 			}
-			if (calculated_power.value >= 8.61) {
-				priceNetto = 42288.88;
-			}
 			if (calculated_power.value >= 9.02) {
 				priceNetto = 43433.07;
 			}
-			if (calculated_power.value >= 9.43) {
-				priceNetto = 45251.4;
-			}
 			if (calculated_power.value >= 9.84) {
 				priceNetto = 46332.72;
-			}
-			if (calculated_power.value >= 10.25) {
-				priceNetto = 49780.17;
 			}
 			if (calculated_power.value >= 10.66) {
 				priceNetto = 52827.66;
