@@ -263,7 +263,7 @@ const updatePower = (el) => {
 			sunLink410W.disabled = false;
 			sunLink410W.style.display = 'block';
 			if (trinaSolar455W.selected == true) {
-				trinaSolar420W.selected = false;
+				trinaSolar420W.selected = true;
 				setTimeout(() => {
 					main(el);
 				}, 0);
@@ -384,7 +384,6 @@ const calculatePrice = (el) => {
 		document.getElementById('no-client-info').classList.remove('active');
 	}
 	if (document.getElementById('trina-solar-420W').selected == true || document.getElementById('trina-solar-455W').selected == true || document.getElementById('trina-solar-460W').selected == true) {
-		console.log('test');
 		calculated_price = parseFloat(calculated_price) + parseFloat(number_of_panels.value) * 80;
 	}
 	updatePrice(el);
