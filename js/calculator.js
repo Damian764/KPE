@@ -60,7 +60,7 @@ document.getElementById('tax-select').addEventListener('change', () => {
 	productionUpdate();
 });
 const main = (el) => {
-	calculatePower();
+	calculatePower(el);
 	calculatePrice(el);
 	productionUpdate();
 	document.getElementById('podatek-vat').innerText = `${vat_value.value * 100}%`;
@@ -73,20 +73,20 @@ const main = (el) => {
 	document.getElementById('moc-modulu').innerText = panel_type.value;
 };
 
-const calculatePower = () => {
+const calculatePower = (el) => {
 	if (proposed_power.value < 2) {
 		proposed_power.value = 2;
 	}
 	const moc_w_kWp = proposed_power.value * 1000;
 	const panels_count = Math.ceil(moc_w_kWp / panel_type.value);
 	updatePanels(panels_count);
-	updatePower();
+	updatePower(el);
 };
 const updatePanels = (amount) => {
 	number_of_panels.value = amount;
 	document.getElementById('ilosc-modolow').innerText = amount;
 };
-const updatePower = () => {
+const updatePower = (el) => {
 	const power = number_of_panels.value * panel_type.value;
 	calculated_power.value = parseFloat(power / 1000);
 
@@ -127,6 +127,10 @@ const updatePower = () => {
 			if (sunLink455W.selected == true) {
 				sunLink455W.selected = false;
 				sunLink410W.selected = true;
+				setTimeout(() => {
+					main(el);
+				}, 0);
+				return;
 			}
 			trinaSolar455W.disabled = true;
 			trinaSolar455W.style.display = 'none';
@@ -134,6 +138,10 @@ const updatePower = () => {
 			if (trinaSolar455W.selected == true) {
 				trinaSolar455W.selected = false;
 				sunLink410W.selected = true;
+				setTimeout(() => {
+					main(el);
+				}, 0);
+				return;
 			}
 			trinaSolar460W.disabled = true;
 			trinaSolar460W.style.display = 'none';
@@ -141,6 +149,10 @@ const updatePower = () => {
 			if (trinaSolar460W.selected == true) {
 				trinaSolar460W.selected = false;
 				sunLink410W.selected = true;
+				setTimeout(() => {
+					main(el);
+				}, 0);
+				return;
 			}
 		}
 		if (calculated_power.value >= 10) {
@@ -154,12 +166,20 @@ const updatePower = () => {
 			if (sunLink410W.selected == true) {
 				sunLink410W.selected = false;
 				sunLink455W.selected = true;
+				setTimeout(() => {
+					main(el);
+				}, 0);
+				return;
 			}
 			trinaSolar420W.disabled = true;
 			trinaSolar420W.style.display = 'none';
 			if (trinaSolar420W.selected == true) {
 				trinaSolar420W.selected = true;
 				sunLink455W.selected = true;
+				setTimeout(() => {
+					main(el);
+				}, 0);
+				return;
 			}
 		}
 	}
@@ -183,25 +203,62 @@ const updatePower = () => {
 		// 		document.getElementById('trina-solar-395W').disabled = true;
 		sunLink455W.disabled = false;
 		sunLink455W.style.display = 'block';
-		sunLink410W.disabled = true;
-		sunLink410W.style.display = 'none';
-		if (sunLink410W.selected == true) {
-			sunLink455W.selected = true;
-		}
-		trinaSolar420W.disabled = true;
-		trinaSolar420W.style.display = 'none';
-		if (trinaSolar420W.selected == true) {
-			sunLink455W.selected = true;
+		if (document.getElementById('hoymiles-inwerter').selected == false) {
+			sunLink410W.disabled = true;
+			sunLink410W.style.display = 'none';
+			if (sunLink410W.selected == true) {
+				sunLink455W.selected = true;
+				setTimeout(() => {
+					main(el);
+				}, 0);
+				return;
+			}
+			trinaSolar420W.disabled = true;
+			trinaSolar420W.style.display = 'none';
+			if (trinaSolar420W.selected == true) {
+				sunLink455W.selected = true;
+				setTimeout(() => {
+					main(el);
+				}, 0);
+				return;
+			}
+		} else {
+			sunLink410W.disabled = false;
+			sunLink410W.style.display = 'block';
+			if (trinaSolar455W.selected == true) {
+				trinaSolar420W.selected = false;
+				setTimeout(() => {
+					main(el);
+				}, 0);
+				return;
+			}
+			sunLink455W.disabled = true;
+			sunLink455W.style.display = 'none';
+			if (sunLink455W.selected == true) {
+				trinaSolar420W.selected = true;
+				setTimeout(() => {
+					main(el);
+				}, 0);
+				return;
+			}
 		}
 		trinaSolar455W.disabled = true;
 		trinaSolar455W.style.display = 'none';
 		if (trinaSolar455W.selected == true && calculated_power.value < 10) {
 			sunLink455W.selected = true;
+			setTimeout(() => {
+				main(el);
+			}, 0);
+			return;
 		}
 		trinaSolar460W.disabled = true;
 		trinaSolar460W.style.display = 'none';
 		if (trinaSolar460W.selected == true && calculated_power.value < 10) {
 			sunLink455W.selected = true;
+			setTimeout(() => {
+				main(el);
+			}, 0);
+			return;
 		}
 		if (calculated_power.value >= 10) {
 			trinaSolar455W.disabled = false;
@@ -291,6 +348,7 @@ const calculatePrice = (el) => {
 		document.getElementById('no-client-info').classList.remove('active');
 	}
 	if (document.getElementById('trina-solar-420W').selected == true || document.getElementById('trina-solar-455W').selected == true || document.getElementById('trina-solar-460W').selected == true) {
+		console.log('test');
 		calculated_price = parseFloat(calculated_price) + parseFloat(number_of_panels.value) * 80;
 	}
 	updatePrice(el);
