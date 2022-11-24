@@ -185,7 +185,7 @@ const updatePower = (el) => {
 		}
 
 		if (document.getElementById('hoymiles-inwerter').selected == true) {
-			if (calculated_power.value < 11) {
+			if (calculated_power.value < 12.3) {
 				sunLink455W.disabled = true;
 				sunLink455W.style.display = 'none';
 				trinaSolar455W.disabled = true;
@@ -204,7 +204,7 @@ const updatePower = (el) => {
 					return;
 				}
 			}
-			if (calculated_power.value >= 11) {
+			if (calculated_power.value >= 12.3) {
 				sunLink410W.disabled = true;
 				sunLink410W.style.display = 'none';
 				trinaSolar420W.disabled = true;
@@ -216,7 +216,7 @@ const updatePower = (el) => {
 				trinaSolar460W.disabled = false;
 				trinaSolar460W.style.display = 'block';
 				if (sunLink410W.selected == true || trinaSolar420W.selected == true) {
-					sunLink455W.selected = true;
+					trinaSolar460W.selected = true;
 					setTimeout(() => {
 						main(el);
 					}, 0);
@@ -465,6 +465,9 @@ const calculatePrice = (el) => {
 		custom_cost += 1500;
 	}
 	calculated_price = parseFloat(calculated_price) + parseFloat(cable_price) + parseFloat(add_cost) + parseFloat(trench_price) + parseFloat(lift_price) + parseFloat(inverter_type.value) + parseFloat(large_inverter.value) + parseFloat(custom_cost) + parseFloat(newPriceIncrease);
+	if (document.getElementById('trina-solar-420W').selected == true || document.getElementById('trina-solar-455W').selected == true || document.getElementById('trina-solar-460W').selected == true) {
+		calculated_price = parseFloat(calculated_price) + parseFloat(number_of_panels.value) * 80;
+	}
 	if (number_of_panels.value % 2 != 0 && place_of_installation__ground.selected == true) {
 		document.getElementById('uneven-ground').classList.add('active');
 		calculated_price = 0;
@@ -483,8 +486,10 @@ const calculatePrice = (el) => {
 	} else {
 		document.getElementById('no-client-info').classList.remove('active');
 	}
-	if (document.getElementById('trina-solar-420W').selected == true || document.getElementById('trina-solar-455W').selected == true || document.getElementById('trina-solar-460W').selected == true) {
-		calculated_price = parseFloat(calculated_price) + parseFloat(number_of_panels.value) * 80;
+	if (document.getElementById('uneven-ground').classList.contains('active') || document.getElementById('no-cable-length').classList.contains('active') || document.getElementById('no-client-info').classList.contains('active')) {
+		document.getElementById('generate_pdf').disabled = true;
+	} else {
+		document.getElementById('generate_pdf').disabled = false;
 	}
 	updatePrice(el);
 };
