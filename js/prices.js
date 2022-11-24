@@ -3021,17 +3021,15 @@ const suggestPrice = () => {
 		}
 	}
 
-	if (document.getElementById('hoymiles-inwerter').selected == false) {
-		if (office_level.value == 'ZL') {
-			zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 200;
-		}
-		if (office_level.value == 'SR') {
-			zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 200;
-		}
+	if (office_level.value == 'ZL') {
+		zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 200;
+	}
+	if (office_level.value == 'SR') {
+		zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 200;
+	}
 
-		if (office_level.value == 'BR') {
-			zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 200;
-		}
+	if (office_level.value == 'BR') {
+		zero_price_calc = zero_price_calc + Math.ceil(calculated_power.value) * 200;
 	}
 	return zero_price_calc * 1.05;
 };
