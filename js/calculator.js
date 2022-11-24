@@ -496,7 +496,16 @@ const updatePrice = (el) => {
 	if (document.getElementById('have_pv_installation').value === 'Tak') {
 		custom_cost += 1500;
 	}
-	suggested_price = parseFloat(suggested_price) + parseFloat(add_cost) + parseFloat(cable_price) + parseFloat(trench_price) + parseFloat(lift_price) + parseFloat(inverter_type.value) + parseFloat(large_inverter.value) + parseFloat(custom_cost) + parseFloat(newPriceIncrease);
+	suggested_price = parseFloat(suggested_price) + parseFloat(add_cost) + parseFloat(cable_price) + parseFloat(trench_price) + parseFloat(lift_price) + parseFloat(inverter_type.value) + parseFloat(large_inverter.value) + parseFloat(custom_cost);
+	if (document.getElementById('hoymiles-inwerter').selected == true) {
+		console.log('Hoymiles wybrany. Cena sugerowana: ');
+		newPriceIncrease = suggested_price * 0.08;
+	} else {
+		console.log('Inny inwerter wybrany. Cena sugerowana: ');
+		newPriceIncrease = 1400;
+	}
+	suggested_price = parseFloat(suggested_price) + parseFloat(newPriceIncrease);
+	console.log(suggested_price);
 	if (document.getElementById('trina-solar-420W').selected == true || document.getElementById('trina-solar-455W').selected == true || document.getElementById('trina-solar-460W').selected == true) {
 		suggested_price = parseFloat(suggested_price) + parseFloat(number_of_panels.value) * 100;
 	}
