@@ -107,6 +107,7 @@ const updatePower = (el) => {
 	const sunLink455W = document.getElementById('sun-link-455W');
 	const trinaSolar455W = document.getElementById('trina-solar-455W');
 	const trinaSolar460W = document.getElementById('trina-solar-460W');
+	const hoymilesBreakpoint = 12.3;
 	if (place_of_installation__pitched_roof.selected == true) {
 		if (roofing.value == 2 || roofing.value == 3 || roofing.value == 4) {
 			roofing.value = 1;
@@ -185,7 +186,7 @@ const updatePower = (el) => {
 		}
 
 		if (document.getElementById('hoymiles-inwerter').selected == true) {
-			if (calculated_power.value < 12.3) {
+			if (calculated_power.value < hoymilesBreakpoint) {
 				sunLink455W.disabled = true;
 				sunLink455W.style.display = 'none';
 				trinaSolar455W.disabled = true;
@@ -204,7 +205,7 @@ const updatePower = (el) => {
 					return;
 				}
 			}
-			if (calculated_power.value >= 12.3) {
+			if (calculated_power.value >= hoymilesBreakpoint) {
 				sunLink410W.disabled = true;
 				sunLink410W.style.display = 'none';
 				trinaSolar420W.disabled = true;
@@ -271,7 +272,7 @@ const updatePower = (el) => {
 			}
 		}
 		if (document.getElementById('hoymiles-inwerter').selected == true) {
-			if (calculated_power.value < 11) {
+			if (calculated_power.value < hoymilesBreakpoint) {
 				sunLink455W.disabled = true;
 				sunLink455W.style.display = 'none';
 				trinaSolar455W.disabled = true;
@@ -290,7 +291,7 @@ const updatePower = (el) => {
 					return;
 				}
 			}
-			if (calculated_power.value >= 11) {
+			if (calculated_power.value >= hoymilesBreakpoint) {
 				sunLink410W.disabled = true;
 				sunLink410W.style.display = 'none';
 				trinaSolar420W.disabled = true;
@@ -302,7 +303,7 @@ const updatePower = (el) => {
 				trinaSolar460W.disabled = false;
 				trinaSolar460W.style.display = 'block';
 				if (sunLink410W.selected == true || trinaSolar420W.selected == true) {
-					sunLink455W.selected = true;
+					trinaSolar460W.selected = true;
 					setTimeout(() => {
 						main(el);
 					}, 0);
@@ -344,7 +345,7 @@ const updatePower = (el) => {
 				return;
 			}
 		} else {
-			if (calculated_power.value < 11) {
+			if (calculated_power.value < hoymilesBreakpoint) {
 				sunLink455W.disabled = true;
 				sunLink455W.style.display = 'none';
 				trinaSolar455W.disabled = true;
@@ -363,7 +364,7 @@ const updatePower = (el) => {
 					return;
 				}
 			}
-			if (calculated_power.value >= 11) {
+			if (calculated_power.value >= hoymilesBreakpoint) {
 				sunLink410W.disabled = true;
 				sunLink410W.style.display = 'none';
 				trinaSolar420W.disabled = true;
@@ -375,7 +376,7 @@ const updatePower = (el) => {
 				trinaSolar460W.disabled = false;
 				trinaSolar460W.style.display = 'block';
 				if (sunLink410W.selected == true || trinaSolar420W.selected == true) {
-					sunLink455W.selected = true;
+					trinaSolar460W.selected = true;
 					setTimeout(() => {
 						main(el);
 					}, 0);
