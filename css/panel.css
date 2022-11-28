@@ -893,6 +893,13 @@ select:disabled {
 	bottom: 1em;
 	right: 2em;
 }
+.bottom-left {
+	bottom: 1em;
+	left: 4em;
+}
+.always-on-top {
+	z-index: 9999;
+}
 .version-info {
 	background: #fff;
 	z-index: 999;
@@ -901,6 +908,71 @@ select:disabled {
 .pill-shaped {
 	padding: 0.5em 1em;
 	border-radius: 1em;
+	border: none;
+}
+.open-modal {
+	background: #fff;
+	box-shadow: 0 5px 20px rgb(0 0 0 /20%);
+    cursor: pointer;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index:999999;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    transition: 0.3s ease-in-out;
+    padding: 2em;
+    box-shadow: 0 0 0 100vmax rgb(0 0 0 / 50%), 0 0 20px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+}
+.modal.hidden {
+    top: 120vh;
+    box-shadow: 0 0 0 100vmax rgb(0 0 0 / 0%), 0 0 20px rgb(0 0 0 / 50%);
+}
+.modal-header {
+    display: flex;
+    margin-bottom: 50px;
+}
+.modal-header h2 {
+    font-size: 1.2em;
+    text-align: justify;
+}
+#close-modal {
+    font-family:monospace;
+    font-size: 2em;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+#id-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap:  10px;
+    grid-gap: 10px;
+    justify-content: space-between;
+}
+#id-form label input {
+    border-radius: 10px;
+    border: 1px solid #696969;
+    padding-inline: 20px;
+    padding-block: 2px;
+}
+.save-button {
+    width: 100%;
+    border-radius: 1em;
+    border: 2px solid transparent;
+    padding-block: 10px;
+    background-color: #d1f1d1;
+    cursor: pointer;
+	transition: 0.3s;
+}
+.save-button:hover,
+.save-button:focus {
+    border: 2px solid #d1f1d1;
+    background-color: #fff;
 }
 @media (max-width: 740px) {
 	html {

@@ -107,7 +107,7 @@ const updatePower = (el) => {
 	const sunLink455W = document.getElementById('sun-link-455W');
 	const trinaSolar455W = document.getElementById('trina-solar-455W');
 	const trinaSolar460W = document.getElementById('trina-solar-460W');
-	const hoymilesBreakpoint = 12.3;
+	const hoymilesBreakpoint = 10;
 	if (place_of_installation__pitched_roof.selected == true) {
 		if (roofing.value == 2 || roofing.value == 3 || roofing.value == 4) {
 			roofing.value = 1;
@@ -345,43 +345,22 @@ const updatePower = (el) => {
 				return;
 			}
 		} else {
-			if (calculated_power.value < hoymilesBreakpoint) {
-				sunLink455W.disabled = true;
-				sunLink455W.style.display = 'none';
-				trinaSolar455W.disabled = true;
-				trinaSolar455W.style.display = 'none';
-				trinaSolar460W.disabled = true;
-				trinaSolar460W.style.display = 'none';
-				sunLink410W.disabled = false;
-				sunLink410W.style.display = 'block';
-				trinaSolar420W.disabled = false;
-				trinaSolar420W.style.display = 'block';
-				if (trinaSolar455W.selected == true || trinaSolar460W.selected == true || sunLink455W.selected == true) {
-					trinaSolar420W.selected = true;
-					setTimeout(() => {
-						main(el);
-					}, 0);
-					return;
-				}
-			}
-			if (calculated_power.value >= hoymilesBreakpoint) {
-				sunLink410W.disabled = true;
-				sunLink410W.style.display = 'none';
-				trinaSolar420W.disabled = true;
-				trinaSolar420W.style.display = 'none';
-				sunLink455W.disabled = false;
-				sunLink455W.style.display = 'block';
-				trinaSolar455W.disabled = false;
-				trinaSolar455W.style.display = 'block';
-				trinaSolar460W.disabled = false;
-				trinaSolar460W.style.display = 'block';
-				if (sunLink410W.selected == true || trinaSolar420W.selected == true) {
-					trinaSolar460W.selected = true;
-					setTimeout(() => {
-						main(el);
-					}, 0);
-					return;
-				}
+			sunLink410W.disabled = true;
+			sunLink410W.style.display = 'none';
+			trinaSolar420W.disabled = true;
+			trinaSolar420W.style.display = 'none';
+			sunLink455W.disabled = false;
+			sunLink455W.style.display = 'block';
+			trinaSolar455W.disabled = false;
+			trinaSolar455W.style.display = 'block';
+			trinaSolar460W.disabled = false;
+			trinaSolar460W.style.display = 'block';
+			if (sunLink410W.selected == true || trinaSolar420W.selected == true) {
+				trinaSolar460W.selected = true;
+				setTimeout(() => {
+					main(el);
+				}, 0);
+				return;
 			}
 		}
 	}
